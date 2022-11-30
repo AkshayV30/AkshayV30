@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(10, 233, 233);
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
 h1 {
   color: #0e4e8d;
   font-size: 100px;
@@ -17,7 +29,7 @@ h3 {
 }
 
 .container {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .heading {
