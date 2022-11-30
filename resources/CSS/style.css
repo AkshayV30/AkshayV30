@@ -1,4 +1,39 @@
 h1 {
-  color: brown;
+  color: #0e4e8d;
   font-size: 100px;
+  text-align: center;
+}
+
+h2 {
+  color: #318ce7;
+  font-size: 75px;
+  text-align: center;
+}
+
+h3 {
+  color: #318ce7;
+  font-size: 50px;
+  text-align: center;
+}
+
+.container {
+  background-color: antiquewhite;
+}
+
+.heading {
+  background-color: aqua;
+}
+.summary {
+}
+.skills {
+}
+.projects {
+}
+.workExperince {
+}
+.acdemicQualifications {
+}
+.certificationsTraining {
+}
+.personalDetails {
 }
