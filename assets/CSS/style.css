@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  padding-top: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  color: #0e4e8d;
+  font-size: 100px;
+}
+
+h2 {
+  color: #318ce7;
+  font-size: 45px;
+}
+
+h3 {
+  color: #318ce7;
+  font-size: 25px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.heading em {
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  line-height: 2em;
+}
+.heading {
+}
+.summary {
+  border-bottom: 1.5px solid #1098ad;
+}
+.skills {
+  border-bottom: 1.5px solid #1098ad;
+}
+.projects {
+  border-bottom: 1.5px solid #1098ad;
+}
+.workExperince {
+  border-bottom: 1.5px solid #1098ad;
+}
+.acdemicQualifications {
+  border-bottom: 1.5px solid #1098ad;
+}
+.certificationsTraining {
+  border-bottom: 1.5px solid #1098ad;
+}
+.personalDetails {
+  border-bottom: 1.5px solid #1098ad;
+}
