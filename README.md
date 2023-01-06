@@ -6,7 +6,7 @@
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=AkshayV30.visitor-badge)
 
 - 🌱 I’m currently learning **DevOps Related Technologies**
-
+- 👯 I’m looking to collaborate on **DevOps Related Projects**
 - 📫 How to reach me **akshayatwork.v30@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
@@ -44,6 +44,10 @@
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
 <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> 
 
+</p>
+
+<p>
+ <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=akshayv30&" alt="akshayv30" />
 </p>
 
 
