@@ -1,6 +1,6 @@
 <!-- # Portfolio -->
 
-<h1 align="center" style="color:green">Hi 👋, I'm Akshay Minz</h1>
+<h1 align="center">Hi 👋, I'm Akshay Minz</h1>
 <h3 align="center">..</h3> 
 
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=AkshayV30.visitor-badge)
@@ -18,7 +18,7 @@
 
 <h3 align="left">Languages and Tools:</h3>
 
-<p align="left">
+<p align="center">
  
 <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a>
 <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> 
