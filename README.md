@@ -1,6 +1,6 @@
-# Portfolio
+<!-- # Portfolio -->
 
-<h1 align="center">Hi 👋, I'm Akshay Minz</h1>
+<h1 align="center" color="red">Hi 👋, I'm Akshay Minz</h1>
 <h3 align="center">..</h3> 
 
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=AkshayV30.visitor-badge)
@@ -12,9 +12,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://www.codechef.com/users/https://www.codechef.com/users/akshayatwork" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="https://www.codechef.com/users/akshayatwork" height="30" width="40" /></a>
-
 <a href="https://www.hackerrank.com/https://www.hackerrank.com/akshayatwork_v30" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="https://www.hackerrank.com/akshayatwork_v30" height="30" width="40" /></a>
-
 <a href="https://www.leetcode.com/https://leetcode.com/akshayv30/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/akshayv30/" height="30" width="40" /></a>
 </p>
 
