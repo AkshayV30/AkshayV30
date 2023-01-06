@@ -1,6 +1,6 @@
 <!-- # Portfolio -->
 
-<h1 align="center">Hi 👋, I'm Akshay Minz</h1>
+<h1 align="center" `#0969DA` >Hi 👋, I'm Akshay Minz</h1>
 <h3 align="center">..</h3> 
 
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=AkshayV30.visitor-badge)
