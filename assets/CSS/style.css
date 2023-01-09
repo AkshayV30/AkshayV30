@@ -50,18 +50,36 @@ h3 {
 .skills {
   border-bottom: 1.5px solid #1098ad;
 }
+.skills ol{
+  list-style: none;
+}
 .projects {
   border-bottom: 1.5px solid #1098ad;
+}
+.projects ol{
+  list-style: none;
 }
 .workExperince {
   border-bottom: 1.5px solid #1098ad;
 }
+.workExperince ol {
+  list-style: none;
+}
 .acdemicQualifications {
   border-bottom: 1.5px solid #1098ad;
+}
+.acdemicQualifications ol{
+list-style: none;
 }
 .certificationsTraining {
   border-bottom: 1.5px solid #1098ad;
 }
+.certificationsTraining ol{
+  list-style: none;
+}
 .personalDetails {
   border-bottom: 1.5px solid #1098ad;
+}
+.personalDetails ol {
+list-style: none;
 }
