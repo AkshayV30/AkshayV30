@@ -52,6 +52,7 @@
  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=akshayv30&" alt="akshayv30" />
 </p>
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AkshayV30)](https://github.com/anuraghazra/github-readme-stats)
 <!-- 
 ## click below for PortFolio
  https://akshayv30.github.io/AkshayV30/ -->
