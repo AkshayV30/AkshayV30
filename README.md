@@ -18,7 +18,7 @@
 <a href="https://www.leetcode.com/akshayv30/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/akshayv30/" height="45" width="60" /></a>
 </p>
 
-### Languages and Tools:
+## Languages and Tools:
 
 <p align="center">
  
@@ -48,11 +48,13 @@
 
 </p>
 
-<p>
+<!-- <p>
  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=akshayv30&" alt="akshayv30" />
 </p>
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AkshayV30)](https://github.com/anuraghazra/github-readme-stats)
+ -->
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=AkshayV30&show_icons=true)  
+ 
+<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AkshayV30)](https://github.com/anuraghazra/github-readme-stats) -->
 <!-- 
 ## click below for PortFolio
  https://akshayv30.github.io/AkshayV30/ -->
