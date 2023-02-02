@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   position: relative;
   text-align: center;
+  color: #ffff;
 }
 
 h1,
@@ -34,6 +35,31 @@ h3 {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.b-video{
+  /* background-image: linear-gradient(rgba(50, 11, 223, 0.3),rgba(12, 3, 20, 0.795)); */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+}
+
+@media (max-aspect-ratio: 16/9)
+{
+  .b-video{
+    width: auto;
+    height:100% ;
+  }
+}
+
+
+@media (min-aspect-ratio: 16/9)
+{
+  .b-video{
+    width: 100%;
+    height:auto ;
+  }
 }
 
 .heading em {
