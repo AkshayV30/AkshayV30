@@ -3,11 +3,32 @@
   padding: 0;
 }
 
+
+:root {
+  --color-0:#fff;
+  --color-1: #61892F;
+  --color-2: #86C232;
+  --color-3: #222629;
+  --color-4: #474B4F;
+  --color-5 :#6B6E70;
+
+  --color-6: #1F2605;
+  --color-7: #1F6521;
+  --color-8: #53900F;
+  --color-9: #A4A71E;
+  --color-10: #D6CE15;
+
+  --color-11: #0B0C10; 
+  --color-12: #000;
+
+}
+
 body {
   font-family: sans-serif;
   position: relative;
   text-align: center;
-  color: #ffff;
+  color: var(--color-10);
+  background-color:var(--color-6);
 }
 
 h1,
@@ -15,20 +36,20 @@ h2,
 h3 {
   padding-top: 10px;
   font-family: "Raleway", sans-serif;
-}
+  }
 
 h1 {
-  color: #0e4e8d;
+  color: var(--color-0);
   font-size: 100px;
 }
 
 h2 {
-  color: #318ce7;
+  color: var(--color-1);
   font-size: 45px;
 }
 
 h3 {
-  color: #318ce7;
+  color: var(--color-1);
   font-size: 25px;
 }
 
@@ -66,61 +87,71 @@ h3 {
   }
 }
 
+
+
+
+/* -------------------------------------------------------------------------------------Tool Tip------------------------------------------------------------------------- */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: var(--color-10);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* -------------------------------------------------------------------------------------Heading------------------------------------------------------------------------- */
 .heading em {
   word-spacing: 10px;
   letter-spacing: 2px;
   line-height: 2em;
 }
 .heading {
-  /*  */
-}
-.summary {
-  border-bottom: 1.5px solid #1098ad;
+padding-top: 76px;
+padding-bottom: 56px;
 }
 
 
-.projects {
-  border-bottom: 1.5px solid #1098ad;
+
+/* -------------------------------------------------------------------------------------About Me------------------------------------------------------------------------- */
+.aboutMe {
+  border-bottom: 1.5px solid var(--color-7);
+  padding: 15px 0;
 }
-.projects ol{
-  list-style: none;
+
+.aboutMe p{
+  color: var(--color-5);
+  padding: 10px 0 ;
 }
-.workExperince {
-  border-bottom: 1.5px solid #1098ad;
-}
-.workExperince ol {
-  list-style: none;
-}
-.acdemicQualifications {
-  border-bottom: 1.5px solid #1098ad;
-}
-.acdemicQualifications ol{
-list-style: none;
-}
-.certificationsTraining {
-  border-bottom: 1.5px solid #1098ad;
-}
-.certificationsTraining ol{
-  list-style: none;
-}
-.personalDetails {
-  border-bottom: 1.5px solid #1098ad;
-}
-.personalDetails ol {
-list-style: none;
-}
+
 
 /* -------------------------------------------------------------------------------------Skills------------------------------------------------------------------------- */
 .skills {
-  border-bottom: 1.5px solid #1098ad;
+  border-bottom: 1.5px solid var(--color-7);
   display: flex;
 }
 
 .skills img,
-.contact img{
-  width: 50px;
+.contact img,
+.stats img{
+  width: 56px;
   height: auto;
-  padding:5px 5px;
+  padding:5px 10px;
   
 }
 
@@ -130,26 +161,67 @@ list-style: none;
 
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  /* border-bottom: 1px dotted black; */
+
+/* -------------------------------------------------------------------------------------projects------------------------------------------------------------------------- */
+.projects {
+  border-bottom: 1.5px solid var(--color-7);
+  display: flex;
+  color:var(--color-5);
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
+.projects ul{
+  text-decoration: none;
+  list-style-type: none;  
+}
+.projects div{
+ 
+  padding: 5px 0 5px 0;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+
+/* -------------------------------------------------------------------------------------Work Experince------------------------------------------------------------------------- */
+
+.workExperince {
+  border-bottom: 1.5px solid var(--color-7);
+}
+.workExperince ol {
+  list-style: none;
+}
+
+.workExperince ol p{
+color: var(--color-5);
+}
+
+/* -------------------------------------------------------------------------------------Academic Qualifications------------------------------------------------------------------------- */
+
+.acdemicQualifications {
+  border-bottom: 1.5px solid var(--color-7);
+}
+.acdemicQualifications ol{
+list-style: none;
+}
+
+/* ------------------------------------------------------------------------------------Certifications------------------------------------------------------------------------- */
+
+.certificationsTraining {
+  border-bottom: 1.5px solid var(--color-7);
+}
+.certificationsTraining ol{
+  list-style: none;
+}
+
+
+/* -------------------------------------------------------------------------------------stats------------------------------------------------------------------------- */
+.stats{
+/* display: flexbox; */
+  border-bottom: 1.5px solid var(--color-7);
+}
+
+/* -------------------------------------------------------------------------------------contacts------------------------------------------------------------------------- */
+
+.contacts {
+  border-bottom: 1.5px solid var(--color-7);
+}
+.contacts ol {
+list-style: none;
 }
