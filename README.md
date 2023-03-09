@@ -4,7 +4,7 @@
 # Hi 👋, I'm Akshay Minz   
 ##     
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=AkshayV30.visitor-badge)
-
+##
 - 🌱 I’m currently learning **DevOps Related Technologies**
 - 👯 I’m looking to collaborate on **DevOps Related Projects**
 - 📫 How to reach me **akshayatwork.v30@gmail.com**
