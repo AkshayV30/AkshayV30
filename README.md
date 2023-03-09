@@ -16,7 +16,7 @@
 
 
 <div align="center"> 
-    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img style="margin: 10px" src="https://github.com/AkshayV30/AkshayV30/blob/master/assets/images/c-logo.png" alt="cplusplus" width="60" height="60"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img style="margin: 10px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/> </a><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img style="margin: 10px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a>
+    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img style="margin: 10px" src="./resources/img/c++.png" alt="cplusplus" width="60" height="60"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img style="margin: 10px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/> </a><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img style="margin: 10px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a>
     <!-- <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img style="margin: 10px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="60" height="60"/> </a>  -->
 </div>
 
@@ -71,3 +71,4 @@
 <!-- 
 ## click below for PortFolio
  https://akshayv30.github.io/AkshayV30/ -->
+ 
