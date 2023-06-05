@@ -2,13 +2,13 @@
 
 # Hi 👋, Welcome to My Repo
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=red&size=25&center=true&vCenter=true&width=600&height=100&lines=AkshayV30..;++;Motivated+Entry-Level+DevOps Enthusiast;And+A+Entry-Level+Front+End+Devloper+Enthusiast;Eager+to+Apply+Modern-Day+Technologies;">
-</div>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=red&size=25&center=true&vCenter=true&width=600&height=100&lines=AkshayV30..;Motivated+Entry+Level+DevOps+Enthusiast;And+A+Entry+Level+Front+End+Devloper+Enthusiast;Eager+to+Apply+Modern-Day+Technologies;">
+</p>
 
 ##
 
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=AkshayV30.visitor-badge)
+<!-- ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=AkshayV30.visitor-badge) -->
 
 ##
 
