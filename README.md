@@ -3,7 +3,7 @@
 # Hi 👋, Welcome to My Repo
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=red&size=25&center=true&vCenter=true&width=600&height=100&lines=AkshayV30..;Motivated+Entry+Level+DevOps+Enthusiast;And+A+Entry+Level+Front+End+Devloper+Enthusiast;Eager+to+Apply+Modern-Day+Technologies;">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=red&size=25&center=true&vCenter=true&width=600&height=100&lines=AkshayV30..;Motivated+Entry+Level+DevOps+Enthusiast;A+Entry+Level+Front+End+Devloper;Eager+to+Apply+Modern-Day+Technologies;">
 </p>
 
 ##
