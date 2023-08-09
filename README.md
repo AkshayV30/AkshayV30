@@ -70,6 +70,6 @@
 <a href="https://www.hackerearth.com/@akshayatwork.v30" target="blank"> <img align="center" src="./resources/img/HackerEarth_logo.png" alt="https://www.hackerearth.com/@akshayatwork.v30" height="45" width="60" /></a>
 <a href="https://www.leetcode.com/akshayv30/" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/akshayv30/" height="45" width="60" /></a>
 <a href="https://www.frontendmentor.io/profile/AkshayV30" target="blank"> <img align="center" src="./resources/img/frontendmentor-svgrepo-com.svg" alt="image of frontend mentor logo" height="45" width="60"></a>   
-<a href="https://cssbattle.dev/player/Azk4NxcEAKaAJkhKtJoSL5GyoTs1" target="blank"> <img align="center" src="./resources/img/cssBattle.svg" alt="cssbattle logo" height="45" width="60"> </a>
+<a href="https://cssbattle.dev/player/Azk4NxcEAKaAJkhKtJoSL5GyoTs1" target="blank"> <img align="center" src="./resources/img/cssBattle.svg" alt="cssbattle logo" height="45" > </a>
 
 </p>
