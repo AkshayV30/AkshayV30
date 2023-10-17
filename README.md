@@ -15,7 +15,9 @@
 #
 
 <div align="center"> 
-    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="./resources/img/c++.png" alt="cplusplus" width="60" height="60"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/> </a><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a>
+    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="./resources/img/c++.png" alt="cplusplus" width="60" height="60"/> </a> 
+    <!--<a href="https://www.java.com" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/> </a> -->
+    <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a>
     <!-- <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="60" height="60"/> </a>  -->
 </div>
 
@@ -42,7 +44,9 @@
 #
 
 <div align="center">
-    <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="60" height="60"/></a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="60" height="60"/> </a><a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="60" height="60"/> </a><a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="60" height="60"/> </a>  
+    <!-- <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="60" height="60"/></a> -->
+     <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="60" height="60"/> </a><a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="60" height="60"/> </a>
+     <!-- <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="60" height="60"/> </a>   -->
 </div>
 
 </td><td valign="top" width="33%">
