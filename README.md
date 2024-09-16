@@ -54,11 +54,23 @@
 #
 
 <div align="center">
-    <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="60" height="60"/> </a><a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="60" height="60"/> </a><a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="60" height="60"/> </a><a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="60" height="60"/> </a><a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="60" height="60"/> </a>
-#  
-  <a href="#" target="_blank" rel="noreferrer"> <img style="margin: 30px" style="margin: 30px" src="./resources/img/aws.png" alt="aws" width="60" height="60"/> </a>
-     <a href="#" target="_blank" rel="noreferrer"> <img style="margin: 30px" style="margin: 30px" src="./resources/img/supercloud.svg" alt="gcp" width="60" height="60"/> </a>
+    <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+	<img style="margin: 30px" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="60" height="60"/> </a>
+	<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> 
+	<img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="60" height="60"/> </a>
+	<a href="https://www.jenkins.io" target="_blank" rel="noreferrer">
+    <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="60" height="60"/> </a>
+    <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> 
+	<img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="60" height="60"/> </a>
+    <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> 
+    <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="60" height="60"/> </a>
+</div>
 
+#
+
+<div align="center">
+    <a href="#" target="_blank" rel="noreferrer"> <img style="margin: 30px" style="margin: 30px" src="./resources/img/aws.png" alt="aws" width="60" height="60"/> </a>
+    <a href="#" target="_blank" rel="noreferrer"> <img style="margin: 30px" style="margin: 30px" src="./resources/img/supercloud.svg" alt="gcp" width="60" height="60"/> </a>
 </div>
 
 </td><td valign="top" width="33%">
@@ -77,8 +89,15 @@
 <a href="https://www.hackerrank.com/akshayatwork_v30" target="blank"> <img align="center" src="./resources/img/HackerRank_logo.png" alt="https://www.hackerrank.com/akshayatwork_v30" height="45" width="60" /></a>
 <a href="https://www.hackerearth.com/@akshayatwork.v30" target="blank"> <img align="center" src="./resources/img/HackerEarth_logo.png" alt="https://www.hackerearth.com/@akshayatwork.v30" height="45" width="60" /></a>
 <a href="https://www.leetcode.com/akshayv30/" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/akshayv30/" height="45" width="60" /></a>
+
+</div>
+
 #
-<a href="https://www.frontendmentor.io/profile/AkshayV30" target="blank"> <img align="center" src="./resources/img/frontendmentor-svgrepo-com.svg" alt="image of frontend mentor logo" height="45" width="60"></a>   
+
+<div align="center">
+
+<a href="https://www.frontendmentor.io/profile/AkshayV30" target="blank"> <img align="center" src="./resources/img/frontendmentor-svgrepo-com.svg" alt="image of frontend mentor logo" height="45" width="60"></a>  
 <a href="https://cssbattle.dev/player/Azk4NxcEAKaAJkhKtJoSL5GyoTs1" target="blank"> <img align="center" src="./resources/img/cssBattle.svg" alt="cssbattle logo" height="45" > </a>
 
+</div>
 </p>
