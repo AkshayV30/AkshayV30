@@ -84,7 +84,7 @@
 #
 
 <h2 align="left" style = "font-size: 28px"> Check Out My other Profile : </h2>
-<div align="left">
+<div align="center">
 <!-- <a href="https://www.codechef.com/users/akshayatwork" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="https://www.codechef.com/users/akshayatwork" height="45" width="60" /></a> -->
 <a href="https://www.hackerrank.com/akshayatwork_v30" target="blank"> <img align="center" src="./resources/img/HackerRank_logo.png" alt="https://www.hackerrank.com/akshayatwork_v30" height="45" width="60" /></a>
 <a href="https://www.hackerearth.com/@akshayatwork.v30" target="blank"> <img align="center" src="./resources/img/HackerEarth_logo.png" alt="https://www.hackerearth.com/@akshayatwork.v30" height="45" width="60" /></a>
