@@ -1,7 +1,7 @@
 {
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass scss/main.scss css/style.css -w"
+    "watch:sass": "node-sass ./resources/scss/main.scss ./resources/css/style.css -w"
   },
   "devDependencies": {
     "node-sass": "^9.0.0"

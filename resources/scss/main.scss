@@ -112,6 +112,15 @@ h3 {
   visibility: visible;
 }
 /* -------------------------------------------------------------------------------------Heading------------------------------------------------------------------------- */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffe4c4;
+  color: #ffffff;
+  padding: 3rem 20px;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
