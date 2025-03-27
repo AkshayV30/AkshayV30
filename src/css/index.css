@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"); */
 
 html {
   font-family: sans-serif;

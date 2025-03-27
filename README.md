@@ -26,7 +26,7 @@
 #
 
 <div align="center"> 
-     <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="60" height="60"/> </a><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="60" height="60"/> </a><a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="60" height="60"/> </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="60" height="60"/> </a>  <a href="https://angular.io" target="_blank" rel="noreferrer"> <img style="margin: 30px" style="margin: 30px" src="./public/img/angular.png" alt="angular" width="60" height="60"/> </a><!--<a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="60" height="60"/> </a>  -->
+     <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="60" height="60"/> </a><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="60" height="60"/> </a><a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="60" height="60"/> </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="60" height="60"/> </a>  <a href="https://angular.io" target="_blank" rel="noreferrer"> <img style="margin: 30px" style="margin: 30px" src="./public/img/angular.png" alt="angular" width="60" height="60"/> </a><a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="60" height="60"/> </a>  
 </div>
 
 </td><td valign="top" width="33%">
@@ -35,8 +35,8 @@
 
 <div align="center">
     <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="60" height="60"/> </a>  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="60" height="60"/> </a>
-    <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="60" height="60"/> </a> <a href="https://tomcat.apache.org/index.html" target="_blank" rel="noreferrer"> 
-    <img style="margin: 30px" src="./public/img/apache_tomcat-icon.svg" alt="tomcat" width="60" height="60"/></a>
+    <!-- <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="60" height="60"/> </a> <a href="https://tomcat.apache.org/index.html" target="_blank" rel="noreferrer"> 
+    <img style="margin: 30px" src="./public/img/apache_tomcat-icon.svg" alt="tomcat" width="60" height="60"/></a> -->
 
 </div>
 </td><td valign="top" width="33%">
@@ -46,7 +46,7 @@
 <div align="center">
     <!-- <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="60" height="60"/></a> -->
      <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="60" height="60"/> </a><a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="60" height="60"/> </a>
-     <!-- <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="60" height="60"/> </a>   -->
+     <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="60" height="60"/> </a>  
 </div>
 
 </td><td valign="top" width="33%">
@@ -87,7 +87,7 @@
 <div align="center">
 <!-- <a href="https://www.codechef.com/users/akshayatwork" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="https://www.codechef.com/users/akshayatwork" height="45" width="60" /></a> -->
 <a href="https://www.hackerrank.com/akshayatwork_v30" target="blank"> <img align="center" src="./public/img/HackerRank_logo.png" alt="https://www.hackerrank.com/akshayatwork_v30" height="45" width="60" /></a>
-<a href="https://www.hackerearth.com/@akshayatwork.v30" target="blank"> <img align="center" src="./public/img/HackerEarth_logo.png" alt="https://www.hackerearth.com/@akshayatwork.v30" height="45" width="60" /></a>
+<!-- <a href="https://www.hackerearth.com/@akshayatwork.v30" target="blank"> <img align="center" src="./public/img/HackerEarth_logo.png" alt="https://www.hackerearth.com/@akshayatwork.v30" height="45" width="60" /></a> -->
 <a href="https://www.leetcode.com/akshayv30/" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/akshayv30/" height="45" width="60" /></a>
 
 </div>
