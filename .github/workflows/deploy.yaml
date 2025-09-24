@@ -55,7 +55,7 @@ jobs:
 
       - name: Upload SSR server folder (optional)
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ssr-server
           path: dist/AkshayV30/server
