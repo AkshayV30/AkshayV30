@@ -43,33 +43,23 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} ng build --configuration production --output-path=dist
 
       - name: Create .nojekyll file
-        run: touch dist/AkshayV30/.nojekyll
+        run: touch dist/AkshayV30/browser/.nojekyll
 
-      - name: Deploy to GitHub Pages
+
+      - name: Deploy SSG to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/AkshayV30
+          folder: dist/AkshayV30/browser
           clean: true
 
+      # - name: Upload SSR server folder (optional)
+      #   if: always()
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: ssr-server
+      #     path: dist/AkshayV30/server
+
       # - name: Copy index.html to 404.html
-      #   run: cp dist/my-app/index.html dist/my-app/404.html
-
-
-  #     - name: Upload artifact
-  #       uses: actions/upload-pages-artifact@v3
-  #       with:
-  #         path: dist
-
-
-  # deploy:
-  #   runs-on: ubuntu-latest
-  #   needs: build
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v4
+      #   run: cp dist/AkshayV30/browser/index.html dist/AkshayV30/browser/404.html
       
