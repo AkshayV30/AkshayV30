@@ -53,12 +53,12 @@ jobs:
           folder: dist/AkshayV30/browser
           clean: true
 
-      # - name: Upload SSR server folder (optional)
-      #   if: always()
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: ssr-server
-      #     path: dist/AkshayV30/server
+      - name: Upload SSR server folder (optional)
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: ssr-server
+          path: dist/AkshayV30/server
 
       # - name: Copy index.html to 404.html
       #   run: cp dist/AkshayV30/browser/index.html dist/AkshayV30/browser/404.html
