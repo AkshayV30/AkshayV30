@@ -5,9 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ssg": "ng build --configuration production",
+    "build:ssr": "ng run AkshayV30:server",
+    "start:ssg": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:AkshayV30": "node dist/AkshayV30/server/server.mjs"
+    "serve:ssr": "node dist/AkshayV30/server/server.mjs"
   },
   "prettier": {
     "overrides": [
