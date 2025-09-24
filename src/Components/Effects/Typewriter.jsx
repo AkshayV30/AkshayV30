@@ -1,16 +1,22 @@
 import React from "react";
+import { useEffect } from "react";
 
 import "./typewriter.css";
 
-const Typewriter = () => {
+const Typewriter = ({ message, subtitle, roles = [] }) => {
   return (
     <>
       <div className="container-typewriter">
-        <p className="typewriter-effect">Akshay Kumar Minz</p>
-        {/* <p className="subtitle-effect">Welcome to my Portfolio!</p> */}
-        <p className="text-lg mt-2">
+        <p className="typewriter-effect">
+          {/* Welcome World to my Portfolio */}
+          {message}
+        </p>
+        <p className="subtitle-effect"> {subtitle}</p>
+
+        <p className="text-lg mt-2  subtitle-effect">
           <span className="text-green-400 subtitle-effect">
-            Designer, Developer, Freelancer, Photographer
+            {/* Front End Developer | DevOps Engineer | Freelancer */}
+            {roles.join(" | ")}
           </span>
         </p>
       </div>
