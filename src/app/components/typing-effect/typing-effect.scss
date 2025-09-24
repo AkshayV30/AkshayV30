@@ -1,0 +1,120 @@
+// Container for typing effect component
+.container--typing-effect {
+  // font-family: "Source Sans Pro", sans-serif;
+  min-height: 100vh; // Full viewport height
+  display: grid;
+  place-content: center; // Center content vertically + horizontally
+  text-align: center;
+  background: var(--bg-color); // Background color from CSS variable
+}
+
+// Typing effect heading
+.typewriter-effect {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem); // Responsive font size
+
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  width: max-content; // Content-based width
+}
+
+// Typing animation masks
+.typewriter-effect::after,
+.typewriter-effect::before {
+  content: "";
+  position: absolute;
+}
+
+.typewriter-effect::before {
+  top: -10rem;
+  right: 0;
+  bottom: -2rem;
+  left: -1ch;
+}
+
+.typewriter-effect::after {
+  top: 3rem;
+  right: 0;
+  bottom: -2rem;
+  left: -1ch;
+}
+
+// Mask for text reveal animation
+.typewriter-effect::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+// Cursor animation
+.typewriter-effect::after {
+  width: 0.5em;
+  height: 0.1em;
+
+  background: rgb(238, 7, 7);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+// Subtitle animation
+.subtitle {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+// --------------------------------------------
+// Keyframes
+// --------------------------------------------
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// WebKit-prefixed keyframes for Safari
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Optional link at bottom
+#yt-link {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+#yt-link:hover,
+#yt-link:focus {
+  color: rgb(8, 228, 228);
+}

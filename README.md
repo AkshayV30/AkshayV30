@@ -55,13 +55,13 @@
 
 <div align="center">
     <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-	<img style="margin: 30px" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="60" height="60"/> </a>
-	<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> 
-	<img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="60" height="60"/> </a>
-	<a href="https://www.jenkins.io" target="_blank" rel="noreferrer">
+  <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="60" height="60"/> </a>
+  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> 
+  <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="60" height="60"/> </a>
+  <a href="https://www.jenkins.io" target="_blank" rel="noreferrer">
     <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="60" height="60"/> </a>
     <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> 
-	<img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="60" height="60"/> </a>
+  <img style="margin: 30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="60" height="60"/> </a>
     <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> 
     <img style="margin: 30px" src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="60" height="60"/> </a>
 </div>
