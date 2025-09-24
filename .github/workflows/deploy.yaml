@@ -40,7 +40,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build Angular app
-        run: ${{ steps.detect-package-manager.outputs.runner }} ng build --configuration production --output-path=dist
+        run: ${{ steps.detect-package-manager.outputs.runner }} ng build --configuration production 
 
       - name: Create .nojekyll file
         run: touch dist/AkshayV30/browser/.nojekyll
