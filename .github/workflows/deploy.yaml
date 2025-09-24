@@ -1,65 +1,47 @@
-name: Deploy Angular v20 to GitHub Pages
+name: Deploy React to GitHub Pages
 
+# Trigger workflow manually or on push to master
 on:
   workflow_dispatch:
   # push:
   #   branches:
-  #     - main  # Change if needed
+  #     - master
 
+# Permissions needed to push to gh-pages
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Step 2: Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            echo "runner=yarn --silent" >> $GITHUB_OUTPUT
-          else
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-          fi
-
+      # Step 3: Install dependencies
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: npm install
 
-      - name: Build Angular app
-        run: ${{ steps.detect-package-manager.outputs.runner }} ng build --configuration production 
+      # Step 4: Build the React app
+      - name: Build React app
+        run: npm run build
 
+      # Step 5: Create .nojekyll to prevent GitHub Pages from ignoring files starting with "_"
       - name: Create .nojekyll file
-        run: touch dist/AkshayV30/browser/.nojekyll
+        run: touch build/.nojekyll
 
-
-      - name: Deploy SSG to GitHub Pages
+      # Step 6: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: dist/AkshayV30/browser
-          clean: true
-
-      - name: Upload SSR server folder (optional)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ssr-server
-          path: dist/AkshayV30/server
-
-      # - name: Copy index.html to 404.html
-      #   run: cp dist/AkshayV30/browser/index.html dist/AkshayV30/browser/404.html
-      
+          branch: gh-pages        # Target branch
+          folder: build           # Folder to deploy (React default build folder)
+          clean: true             # Clean existing files before deploying
