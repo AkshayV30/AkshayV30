@@ -43,7 +43,7 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 <div align="center">
 
 #### 💻 Languages  
-<a href="#"><img src="https://github.com/AkshayV30/AkshayV30/tree/master/public/logo/c++.png" alt="C++" width="55" height="55" style="margin:12px;"/></a>
+<a href="#"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/c++.png" alt="C++" width="55" height="55" style="margin:12px;"/></a>
 <a href="https://www.python.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="55" height="55" style="margin:12px;"/></a>
 <a href="https://www.typescriptlang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="55" height="55" style="margin:12px;"/></a>
 
