@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=500&color=F75C7E&center=true&vCenter=true&width=600&lines=Hey+there!+👋;Welcome+to+Akshay's+World!;Full-Stack+Developer+|+DevOps+Engineer+|+Problem+Solver" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=500&color=F75C7E&center=true&vCenter=true&width=700&lines=Hey+there!+👋;Welcome+to+Akshay's+World!;Full-Stack+Developer+|+DevOps+Engineer+" alt="Typing SVG" />
 
 </div>
 
@@ -20,7 +20,7 @@ My toolkit blends **software craftsmanship** with **DevOps precision**, shaped b
 - Design that feels invisible, because it *just works*.  
 
 🧩 **Focus Areas:**  
-- **Frontend:** React, Angular, Vite, TypeScript  
+- **Frontend:** React, Angular,  TypeScript  
 - **Backend:** Node.js, Express, NestJS  
 - **DevOps & Cloud:** Docker, Kubernetes, Terraform, AWS, GCP  
 - **Databases:** MongoDB, MySQL, PostgreSQL  
