@@ -61,7 +61,7 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 #### ⚙️ Backend  
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="ExpressJS" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS" width="55" height="55" style="margin:12px;"/></a>
-<a href="https://nestjs.com/"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/swg/Nest_js.svg" alt="NestJS" width="55" height="55" style="margin:12px;"/></a>
+<a href="https://nestjs.com/"><img src="https://github.com/AkshayV30/AkshayV30/blob/master/public/logo/swg/Nest_js.svg" alt="NestJS" width="55" height="55" style="margin:12px;"/></a>
 
 ---
 
