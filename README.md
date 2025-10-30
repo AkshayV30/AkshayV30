@@ -22,7 +22,7 @@ My toolkit blends **software craftsmanship** with **DevOps precision**, shaped b
 🧩 **Focus Areas:**  
 - **Frontend:** React, Angular, Vite, TypeScript  
 - **Backend:** Node.js, Express, NestJS  
-- **DevOps & Cloud:** Docker, Kubernetes, Terraform, AWS  
+- **DevOps & Cloud:** Docker, Kubernetes, Terraform, AWS, GCP
 - **Databases:** MongoDB, MySQL, PostgreSQL  
 - **Practices:** CI/CD, GitOps, Clean Architecture, Test-Driven Development  
 
