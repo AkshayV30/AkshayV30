@@ -53,16 +53,15 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="55" height="55" style="margin:12px;"/></a>
-<a href="#"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/angular.png" alt="Angular" width="55" height="55" style="margin:12px;"/></a>
+<a href="#"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/angular_gradient.png" alt="Angular" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="55" height="55" style="margin:12px;"/></a>
-<a href="https://vitejs.dev/"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/swg/Vite.js.svg" alt="Vite" width="55" height="55" style="margin:12px;"/></a>
 
 ---
 
 #### ⚙️ Backend  
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="ExpressJS" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS" width="55" height="55" style="margin:12px;"/></a>
-<a href="https://nestjs.com/"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/swg/Nest.js.svg" alt="NestJS" width="55" height="55" style="margin:12px;"/></a>
+<a href="https://nestjs.com/"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/swg/Nest_js.svg" alt="NestJS" width="55" height="55" style="margin:12px;"/></a>
 
 ---
 
