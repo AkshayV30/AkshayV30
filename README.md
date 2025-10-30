@@ -43,7 +43,7 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 <div align="center">
 
 #### 💻 Languages  
-<a href="#"><img src="./public/logo/c++.png" alt="C++" width="55" height="55" style="margin:12px;"/></a>
+<a href="#"><img src="https://github.com/AkshayV30/AkshayV30/tree/master/public/logo/c++.png" alt="C++" width="55" height="55" style="margin:12px;"/></a>
 <a href="https://www.python.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="55" height="55" style="margin:12px;"/></a>
 <a href="https://www.typescriptlang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="55" height="55" style="margin:12px;"/></a>
 
@@ -53,16 +53,16 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="55" height="55" style="margin:12px;"/></a>
-<a href="#"><img src="./public/logo/angular.png" alt="Angular" width="55" height="55" style="margin:12px;"/></a>
+<a href="#"><img src="https://github.com/AkshayV30/AkshayV30/tree/master/public/logo/angular.png" alt="Angular" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="55" height="55" style="margin:12px;"/></a>
-<a href="https://vitejs.dev/"><img src="./public/logo/swg/Vite.js.svg" alt="Vite" width="55" height="55" style="margin:12px;"/></a>
+<a href="https://vitejs.dev/"><img src="https://github.com/AkshayV30/AkshayV30/tree/master/public/logo/swg/Vite.js.svg" alt="Vite" width="55" height="55" style="margin:12px;"/></a>
 
 ---
 
 #### ⚙️ Backend  
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="ExpressJS" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS" width="55" height="55" style="margin:12px;"/></a>
-<a href="https://nestjs.com/"><img src="./public/logo/swg/Nest.js.svg" alt="NestJS" width="55" height="55" style="margin:12px;"/></a>
+<a href="https://nestjs.com/"><img src="https://github.com/AkshayV30/AkshayV30/tree/master/public/logo/swg/Nest.js.svg" alt="NestJS" width="55" height="55" style="margin:12px;"/></a>
 
 ---
 
@@ -72,13 +72,13 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 <a href="#"><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Jenkins" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" width="55" height="55" style="margin:12px;"/></a>
-<a href="https://www.terraform.io/"><img src="./public/logo/terraform.png" alt="Terraform" width="55" height="55" style="margin:12px;"/></a>
+<a href="https://www.terraform.io/"><img src="https://github.com/AkshayV30/AkshayV30/tree/master/public/logo/terraform.png" alt="Terraform" width="55" height="55" style="margin:12px;"/></a>
 
 ---
 
 #### ☁️ Cloud  
 <a href="#"><img src="./public/logo/aws.png" alt="AWS" width="55" height="55" style="margin:12px;"/></a>
-<a href="#"><img src="./public/logo/swg/supercloud.svg" alt="GCP" width="55" height="55" style="margin:12px;"/></a>
+<a href="#"><img src="https://github.com/AkshayV30/AkshayV30/tree/master/public/logo/swg/supercloud.svg" alt="GCP" width="55" height="55" style="margin:12px;"/></a>
 
 </div>
 
@@ -90,7 +90,7 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 <a href="https://www.hackerrank.com/akshayatwork_v30" target="_blank"><img src="./public/logo/HackerRank_logo.png" alt="HackerRank" height="45"/></a>
 <a href="https://leetcode.com/akshayv30/" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode" height="45"/></a>
 <a href="https://www.frontendmentor.io/profile/AkshayV30" target="_blank"><img src="./public/logo/swg/frontendmentor-svgrepo-com.svg" alt="Frontend Mentor" height="45"/></a>
-<a href="https://cssbattle.dev/player/Azk4NxcEAKaAJkhKtJoSL5GyoTs1" target="_blank"><img src="./public/logo/swg/cssBattle.svg" alt="CSSBattle" height="45"/></a>
+<a href="https://cssbattle.dev/player/Azk4NxcEAKaAJkhKtJoSL5GyoTs1" target="_blank"><img src="https://github.com/AkshayV30/AkshayV30/tree/master/public/logo/swg/cssBattle.svg" alt="CSSBattle" height="45"/></a>
 </div>
 
 ---
