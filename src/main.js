@@ -1,3 +1,5 @@
+import "./style.css";
+
 import { renderApp } from "./shared/layouts/main.layout.js";
 import { initSkillToggle } from "./features/skills/skills.behavior.js";
 import { initThemeToggle } from "./core/theme.js";

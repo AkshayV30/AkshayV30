@@ -1,0 +1,17 @@
+@layer tokens, base, layout, components, utilities;
+
+@import url("./shared/styles/tokens/index.css") layer(tokens);
+
+@import url("./shared/styles/base/reset.css") layer(base);
+@import url("./shared/styles/base/typography.css") layer(base);
+
+@import url("./shared/styles/layouts/layout.css") layer(layout);
+
+@import url("./shared/styles/components/components.css") layer(components);
+@import url("./shared/styles/components/buttons.css") layer(components);
+
+@import url("./shared/styles/utilities/utilities.css") layer(utilities);
+@import url("./shared/styles/utilities/flex.css") layer(utilities);
+@import url("./shared/styles/utilities/grid.css") layer(utilities);
+@import url("./shared/styles/utilities/states.css") layer(utilities);
+@import url("./shared/styles/utilities/motion.css") layer(utilities);

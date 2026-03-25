@@ -1,0 +1,42 @@
+{
+  "name": "akshayv30-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of AkshayV30 – to showcase skills",
+  "main": "main.js",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dist",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkshayV30/AkshayV30.git"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "Vite",
+    "JavaScript",
+    "CSS",
+    "HTML",
+    "DevOps"
+  ],
+  "author": "AkshayV30",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AkshayV30/AkshayV30/issues"
+  },
+  "homepage": "https://akshayv30.github.io/AkshayV30/",
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "rimraf": "^5.0.10",
+    "vite": "^8.0.2"
+  }
+}
