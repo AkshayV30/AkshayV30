@@ -1,0 +1,48 @@
+@layer tokens {
+  :root {
+    /* ============================= */
+    /* LIGHT THEME  */
+    /* ============================= */
+
+    --color-background: #f8fafc; /* soft neutral (better than pure white) */
+    --color-surface: #ffffff;
+
+    /* TEXT (critical fix for readability) */
+    --color-text: #1f2933; /* deep gray → MUCH better than #606c71 */
+    --color-heading: #086375; /* Stormy Teal (primary identity) */
+    --color-link: #1e6bb8;
+
+    --color-muted: #6b7280;
+    --color-border: #e5e7eb;
+
+    /* ===== BRAND / ACCENTS ===== */
+
+    /* Cayman upgraded */
+    --color-header-start: #155799;
+    --color-header-end: #1dd3b0; /* turquoise infusion */
+
+    /* Accent system */
+    --color-accent-primary: #086375; /* Stormy Teal */
+    --color-accent-secondary: #1dd3b0; /* Turquoise */
+    --color-accent-highlight: #affc41; /* Green Yellow (use VERY sparingly) */
+    --color-accent-soft: #b2ff9e; /* Light Green */
+
+    /* Avoid using this for text directly */
+    --color-accent-deep: #3c1642; /* Dark Amethyst (for cards/sections) */
+
+    /* Buttons */
+    --color-btn-bg: #ffffff;
+    --color-btn-border: #d1d5db;
+    --color-btn-text: #1f2933;
+
+    --color-btn-bg-hover: #f1f5f9;
+    --color-btn-border-hover: #9ca3af;
+
+    /* Code */
+    --color-code-bg: #f3f6fa;
+    --color-code-text: #334155;
+
+    /* Blockquote */
+    --color-blockquote-border: #cbd5e1;
+  }
+}

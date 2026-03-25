@@ -1,0 +1,61 @@
+@layer components {
+  .c-theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-sm);
+  }
+
+  .c-theme__icon {
+    width: 4rem;
+    aspect-ratio: 1;
+  }
+
+  /* ----------------- */
+  .c-card {
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+  }
+
+  .c-card__title {
+    font-weight: var(--font-weight-bold);
+  }
+
+  .c-card__desc {
+    color: var(--color-light-muted);
+  }
+
+  .c-tag {
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+  }
+
+  .c-exp {
+    margin-bottom: var(--space-md);
+  }
+
+  .c-heading {
+    font-size: 2.4rem;
+    padding: 4rem;
+  }
+
+  .c-skill-group__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .c-skill-group.is-open .c-skill-group__content {
+    max-height: 200px;
+  }
+
+  .c-skill-group__toggle {
+    background: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

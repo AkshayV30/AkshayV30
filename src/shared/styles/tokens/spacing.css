@@ -1,0 +1,10 @@
+@layer tokens {
+  :root {
+    /* Spacing */
+    --space-xs: 0.4rem;
+    --space-sm: 0.8rem;
+    --space-md: 1.6rem;
+    --space-lg: 2.4rem;
+    --space-xl: 4rem;
+  }
+}

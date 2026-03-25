@@ -1,0 +1,8 @@
+@layer tokens {
+  :root {
+    /* Breakpoints */
+    --bp-mobile: 37.5rem;
+    --bp-tablet: 76.8rem;
+    --bp-desktop: 144rem;
+  }
+}

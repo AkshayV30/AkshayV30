@@ -1,0 +1,71 @@
+@layer utilities {
+  /* ===== BASE ANIMATION HOOK ===== */
+  .u-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity var(--duration-normal) var(--ease-out),
+      transform var(--duration-normal) var(--ease-out);
+  }
+
+  .u-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== FADE ===== */
+  .u-fade {
+    opacity: 0;
+    transition: opacity var(--duration-normal) var(--ease-out);
+  }
+
+  .u-fade.is-visible {
+    opacity: 1;
+  }
+
+  /* ===== SLIDE ===== */
+  .u-slide-up {
+    transform: translateY(30px);
+  }
+
+  .u-slide-down {
+    transform: translateY(-30px);
+  }
+
+  .u-slide-left {
+    transform: translateX(30px);
+  }
+
+  .u-slide-right {
+    transform: translateX(-30px);
+  }
+
+  .is-visible.u-slide-up,
+  .is-visible.u-slide-down,
+  .is-visible.u-slide-left,
+  .is-visible.u-slide-right {
+    transform: translate(0);
+  }
+
+  /* ===== SCALE ===== */
+  .u-scale {
+    transform: scale(0.95);
+  }
+
+  .is-visible.u-scale {
+    transform: scale(1);
+  }
+
+  /* ===== HOVER (micro-interactions) ===== */
+  .u-hover-lift {
+    transition: transform var(--duration-fast) var(--ease-standard);
+  }
+
+  .u-hover-lift:hover {
+    transform: translateY(-4px);
+  }
+
+  .u-hover-scale:hover {
+    transform: scale(1.05);
+  }
+}

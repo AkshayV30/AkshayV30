@@ -1,0 +1,19 @@
+@layer base {
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+  body {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+
+    color: var(--color-text);
+    background: var(--color-background);
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}

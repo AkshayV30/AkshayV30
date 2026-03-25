@@ -1,0 +1,45 @@
+@layer tokens {
+  [data-theme="dark"] {
+    --color-background: #0b1220; /* deeper than your current */
+    --color-surface: #111827;
+
+    /* TEXT */
+    --color-text: #e5e7eb;
+    --color-heading: #1dd3b0; /* turquoise pops beautifully in dark */
+    --color-link: #60a5fa;
+
+    --color-muted: #9ca3af;
+    --color-border: #1f2937;
+
+    /* Cayman gradient (premium feel) */
+    --color-header-start: #0f2027;
+    --color-header-end: #086375;
+
+    /* Accents tuned for dark */
+    --color-accent-primary: #1dd3b0;
+    --color-accent-secondary: #38bdf8;
+    --color-accent-highlight: #affc41;
+    --color-accent-soft: #4ade80;
+
+    --color-accent-deep: #3c1642;
+
+    /* Buttons */
+    --color-btn-bg: #111827;
+    --color-btn-border: #374151;
+    --color-btn-text: #e5e7eb;
+
+    --color-btn-bg-hover: #1f2937;
+    --color-btn-border-hover: #4b5563;
+
+    /* Code */
+    --color-code-bg: #1e293b;
+    --color-code-text: #cbd5e1;
+
+    /* Blockquote */
+    --color-blockquote-border: #334155;
+
+    /* Shadows stronger */
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.6);
+  }
+}

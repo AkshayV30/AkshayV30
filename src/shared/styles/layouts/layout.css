@@ -1,0 +1,34 @@
+@layer layout {
+  .l-body {
+    height: fit-content;
+  }
+
+  .l-header {
+    padding: 2rem;
+    background: linear-gradient(
+      5deg,
+      var(--color-header-start),
+      var(--color-header-end)
+    );
+  }
+
+  .l-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .l-main {
+    width: 100%;
+  }
+
+  .l-projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: var(--space-md);
+  }
+
+  .l-skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+}

@@ -1,0 +1,7 @@
+@layer tokens {
+  :root {
+    /* Radius */
+    --radius-sm: 0.2rem;
+    --radius-md: 0.4rem;
+  }
+}

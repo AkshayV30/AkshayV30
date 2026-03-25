@@ -1,0 +1,80 @@
+@layer base {
+  /* 1. Box sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* 2. Remove default margin/padding */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 3. Improve body defaults */
+  /* html,
+body {
+} */
+
+  body {
+    height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* 4. Media elements behave properly */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* 5. Form elements inherit fonts */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  /* 6. Buttons reset */
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  /* 7. Anchor reset */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* 8. List reset */
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  /* 9. Table reset */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* 10. Prevent text overflow issues */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+}
