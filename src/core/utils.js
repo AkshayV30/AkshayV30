@@ -7,5 +7,5 @@ export const renderList = (items, cb) => {
 };
 
 export const navLink = (href, label) => `
-  <a class="c-nav__link" href="${href}">${label}</a>
+  <a class="c-nav__link c-nav__link--animated" href="${href}">${label}</a>
 `;

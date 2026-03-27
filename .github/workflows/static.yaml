@@ -8,7 +8,7 @@ on:
 
 # Global environment variables for the workflow
 env:
-  NODE_VERSION: 20 # Node.js LTS version
+  NODE_VERSION: 24 # Node.js LTS version
   DIST_PATH: ./dist # Build output path
 
 # GitHub token permissions for Pages deployment

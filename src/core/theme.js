@@ -5,8 +5,8 @@ export function initThemeToggle() {
   if (!btn) return;
 
   const THEMES = {
-    light: "./../../assets/icons/sun.png",
-    dark: "./../../assets/icons/moon.png",
+    light: "icons/sun.png",
+    dark: "icons/moon.png",
   };
 
   function setTheme(theme) {

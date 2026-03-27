@@ -1,10 +1,91 @@
 @layer tokens {
   :root {
-    /* Spacing */
+    /* Base Spacing Scale */
+    --space-xxs: 0.2rem;
     --space-xs: 0.4rem;
     --space-sm: 0.8rem;
     --space-md: 1.6rem;
     --space-lg: 2.4rem;
     --space-xl: 4rem;
+    --space-xxl: 6.4rem;
+
+    /* Optional: Fractional spacing for tighter control */
+    --space-1-2: 0.5rem;
+    --space-3-4: 0.75rem;
+
+    /* Responsive scaling multipliers */
+    --space-xs-responsive: clamp(0.3rem, 1vw, 0.6rem);
+    --space-sm-responsive: clamp(0.6rem, 1.5vw, 1rem);
+    --space-md-responsive: clamp(1.2rem, 2.5vw, 1.8rem);
+    --space-lg-responsive: clamp(2rem, 4vw, 2.8rem);
+    --space-xl-responsive: clamp(3.5rem, 6vw, 4.5rem);
+  }
+}
+
+/* Usage examples for margin/padding utilities */
+.m-xs {
+  margin: var(--space-xs);
+}
+.m-sm {
+  margin: var(--space-sm);
+}
+.m-md {
+  margin: var(--space-md);
+}
+.m-lg {
+  margin: var(--space-lg);
+}
+.m-xl {
+  margin: var(--space-xl);
+}
+
+.p-xs {
+  padding: var(--space-xs);
+}
+.p-sm {
+  padding: var(--space-sm);
+}
+.p-md {
+  padding: var(--space-md);
+}
+.p-lg {
+  padding: var(--space-lg);
+}
+.p-xl {
+  padding: var(--space-xl);
+}
+
+/* Responsive variants */
+@media (max-width: 768px) {
+  .m-xs {
+    margin: var(--space-xs-responsive);
+  }
+  .m-sm {
+    margin: var(--space-sm-responsive);
+  }
+  .m-md {
+    margin: var(--space-md-responsive);
+  }
+  .m-lg {
+    margin: var(--space-lg-responsive);
+  }
+  .m-xl {
+    margin: var(--space-xl-responsive);
+  }
+
+  .p-xs {
+    padding: var(--space-xs-responsive);
+  }
+  .p-sm {
+    padding: var(--space-sm-responsive);
+  }
+  .p-md {
+    padding: var(--space-md-responsive);
+  }
+  .p-lg {
+    padding: var(--space-lg-responsive);
+  }
+  .p-xl {
+    padding: var(--space-xl-responsive);
   }
 }

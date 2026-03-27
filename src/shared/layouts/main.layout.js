@@ -21,8 +21,8 @@ export function renderApp() {
 
     <main class="l-main">
       ${Hero()}
-      ${Projects()}
       ${Skills()}
+      ${Projects()}
       ${Experience()}
       ${Certificate()}
       ${Contact()}

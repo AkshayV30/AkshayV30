@@ -1,0 +1,47 @@
+@layer utilities {
+  .position {
+    /* position: absolute; */
+    /* left: 0%; */
+    /* top: 20%; */
+    /* transform: translateY(-50%); */
+  }
+
+  .u-typing-effect {
+    /* margin-left: 5%; */
+  }
+
+  .u-typing-effect__heading {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font-family: "Source Code Pro", monospace;
+    white-space: nowrap;
+  }
+
+  /* blinking cursor */
+  .u-typing-effect__heading::after {
+    content: "|";
+    margin-left: 4px;
+    animation: blink 1s infinite;
+  }
+
+  .u-typing-effect__subtitle {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 1s ease 1.5s forwards;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

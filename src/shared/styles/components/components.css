@@ -1,16 +1,9 @@
 @layer components {
-  .c-theme-toggle {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: var(--space-sm);
+  .c-heading {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    text-align: center;
+    margin-bottom: var(--space-md);
   }
-
-  .c-theme__icon {
-    width: 4rem;
-    aspect-ratio: 1;
-  }
-
   /* ----------------- */
   .c-card {
     padding: var(--space-md);
@@ -36,12 +29,6 @@
   .c-exp {
     margin-bottom: var(--space-md);
   }
-
-  .c-heading {
-    font-size: 2.4rem;
-    padding: 4rem;
-  }
-
   .c-skill-group__content {
     max-height: 0;
     overflow: hidden;
