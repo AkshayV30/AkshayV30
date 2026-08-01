@@ -9,32 +9,35 @@
 ## 🧠 About Me
 
 👋 Hi, I’m **Akshay Minz** — a curious mind with a knack for **building systems that work beautifully, at scale, and in silence**.  
-I move seamlessly between the **frontend** and **backend**, from crafting clean UIs to automating cloud deployments that run without fail.  
+I move seamlessly between the **frontend** and **backend**, from crafting clean UIs to automating cloud deployments that run without fail.
 
 I don’t just code — I **engineer solutions** that merge creativity, logic, and performance.  
 My toolkit blends **software craftsmanship** with **DevOps precision**, shaped by a belief that every line of code should serve both function and form.
 
-💡 **What I value most:**  
-- Elegance in architecture, simplicity in execution.  
-- Automation that saves time, not just effort.  
-- Design that feels invisible, because it *just works*.  
+💡 **What I value most:**
 
-🧩 **Focus Areas:**  
-- **Frontend:** React, Angular,  TypeScript  
-- **Backend:** Node.js, Express, NestJS  
-- **DevOps & Cloud:** Docker, Kubernetes, Terraform, AWS, GCP  
-- **Databases:** MongoDB, MySQL, PostgreSQL  
-- **Practices:** CI/CD, GitOps, Clean Architecture, Test-Driven Development  
+- Elegance in architecture, simplicity in execution.
+- Automation that saves time, not just effort.
+- Design that feels invisible, because it _just works_.
 
-🌱 **Currently exploring:**  
-- Microservices, distributed architectures, and cloud-native design.  
-- Developer Experience tooling with **NX**, **Turborepo**, and **Vite**.  
-- Infrastructure-as-Code and automated cloud orchestration using **Terraform**.  
+🧩 **Focus Areas:**
+
+- **Frontend:** React, Angular, TypeScript
+- **Backend:** Node.js, Express, NestJS
+- **DevOps & Cloud:** Docker, Kubernetes, Terraform, AWS, GCP
+- **Databases:** MongoDB, MySQL, PostgreSQL
+- **Practices:** CI/CD, GitOps, Clean Architecture, Test-Driven Development
+
+🌱 **Currently exploring:**
+
+- Microservices, distributed architectures, and cloud-native design.
+- Developer Experience tooling with **NX**, **Turborepo**, and **Vite**.
+- Infrastructure-as-Code and automated cloud orchestration using **Terraform**.
 
 ⚡ **Beyond the terminal:**  
-I challenge myself through design puzzles, front-end battles, and exploring ways to blend logic with aesthetic precision.  
+I challenge myself through design puzzles, front-end battles, and exploring ways to blend logic with aesthetic precision.
 
-> *Some call it coding. I call it crafting digital order from chaos.*
+> _Some call it coding. I call it crafting digital order from chaos._
 
 ---
 
@@ -42,14 +45,16 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 
 <div align="center">
 
-#### 💻 Languages  
+#### 💻 Languages
+
 <a href="#"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/c++.png" alt="C++" width="55" height="55" style="margin:12px;"/></a>
 <a href="https://www.python.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="55" height="55" style="margin:12px;"/></a>
 <a href="https://www.typescriptlang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="55" height="55" style="margin:12px;"/></a>
 
 ---
 
-#### 🎨 Frontend  
+#### 🎨 Frontend
+
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="55" height="55" style="margin:12px;"/></a>
@@ -58,14 +63,16 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 
 ---
 
-#### ⚙️ Backend  
+#### ⚙️ Backend
+
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="ExpressJS" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS" width="55" height="55" style="margin:12px;"/></a>
 <a href="https://nestjs.com/"><img src="https://github.com/AkshayV30/AkshayV30/blob/master/public/logo/swg/Nest_js.svg" alt="NestJS" width="55" height="55" style="margin:12px;"/></a>
 
 ---
 
-#### 🧰 DevOps & Tools  
+#### 🧰 DevOps & Tools
+
 <a href="#"><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="Bash" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Jenkins" width="55" height="55" style="margin:12px;"/></a>
@@ -75,7 +82,8 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 
 ---
 
-#### ☁️ Cloud  
+#### ☁️ Cloud
+
 <a href="#"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/aws.png" alt="AWS" width="55" height="55" style="margin:12px;"/></a>
 <a href="#"><img src="https://raw.githubusercontent.com/AkshayV30/AkshayV30/master/public/logo/swg/supercloud.svg" alt="GCP" width="55" height="55" style="margin:12px;"/></a>
 
@@ -102,5 +110,5 @@ I challenge myself through design puzzles, front-end battles, and exploring ways
 
 ---
 
-> *“Every line of code tells a story — some whisper logic, others echo purpose.”*  
+> _“Every line of code tells a story — some whisper logic, others echo purpose.”_  
 > © 2025 **AkshayV30**

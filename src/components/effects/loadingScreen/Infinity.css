@@ -1,0 +1,102 @@
+:root {
+  --loader-track: rgb(120 120 120 / 0.1);
+  --loader-accent: #14b8a6;
+  --loader-glow: rgb(20 184 166 / 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --loader-track: rgb(255 255 255 / 0.08);
+    --loader-accent: #18f33d;
+    --loader-glow: rgb(103 232 249 / 0.38);
+  }
+}
+
+.loader-container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.infinity {
+  width: clamp(180px, 22vw, 250px);
+  overflow: visible;
+
+  /* Hint the browser that this element animates */
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Static outline */
+
+.track {
+  fill: none;
+  stroke: var(--loader-track);
+  stroke-width: 0.28;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Soft trailing glow */
+
+.trail {
+  fill: none;
+  stroke: var(--loader-accent);
+
+  stroke-width: 0.34;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  /* Smaller, subtler trail */
+  stroke-dasharray: 10 18;
+
+  opacity: 0.1;
+
+  animation: loop 4s linear infinite;
+
+  will-change: stroke-dashoffset;
+}
+
+/* Main moving ribbon */
+
+.highlight {
+  fill: none;
+  stroke: var(--loader-accent);
+
+  stroke-width: 0.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+
+  /* About 22% of the path */
+  stroke-dasharray: 8 20;
+
+  animation: loop 4s linear infinite;
+
+  filter: drop-shadow(0 0 4px var(--loader-glow));
+
+  will-change: stroke-dashoffset;
+}
+
+/* Moving head */
+
+.runner {
+  fill: var(--loader-accent);
+
+  /* One shadow instead of three */
+  filter: drop-shadow(0 0 8px var(--loader-glow));
+
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+@keyframes loop {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: -28;
+  }
+}
