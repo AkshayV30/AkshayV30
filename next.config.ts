@@ -1,17 +1,22 @@
 import type { NextConfig } from "next";
 
-const isGithubPages =
-  process.env.GITHUB_ACTIONS || process.env.NODE_ENV === "production";
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: "export",
+
+  // GitHub Pages project-site URL:
+  // https://akshayv30.github.io/AkshayV30/
+  ...(isGitHubPages && {
+    basePath: "/AkshayV30",
+    assetPrefix: "/AkshayV30/",
+  }),
+
   trailingSlash: true,
+
   images: {
     unoptimized: true,
   },
-  basePath: isGithubPages ? "/AkshayV30" : "",
-  assetPrefix: isGithubPages ? "/AkshayV30/" : "",
 };
 
 export default nextConfig;
