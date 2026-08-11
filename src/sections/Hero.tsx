@@ -1,24 +1,26 @@
 import Link from "next/link";
 import { ArrowDown } from "lucide-react";
 
-import { BrandIcon } from "@/components/ui/brandIcons";
+import { GithubIcon, LinkedinIcon } from "@/lib/icons/SocialIcons";
+
 import { Button } from "@/components/ui/button";
 import { Typewriter } from "@/components/effects/Typewriter";
 
-export function Hero() {
+export default function Hero() {
   return (
-    <section id="hero" className="flex min-h-[calc(100vh-5rem)] items-center">
-      <div className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-8 lg:px-12">
-        <div className="max-w-4xl">
-          <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-primary">
-            Hello, I&apos;m
-          </p>
+    <section
+      id="hero"
+      className="flex min-h-[calc(100vh-4rem)] scroll-mt-16 items-center"
+    >
+      <div className="w-full">
+        <div className="max-w-3xl">
+          <p className="text-sm font-medium text-primary">Hello, I&apos;m</p>
 
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+          <h1 className="mt-3 font-heading text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Akshay Minz
           </h1>
 
-          <div className="mt-4">
+          <div className="mt-4 text-xl font-medium text-muted-foreground sm:text-2xl">
             <Typewriter
               roles={[
                 "DevOps Engineer",
@@ -36,38 +38,38 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button size="lg">
+            <Button size="lg" radius="full">
               <Link href="#projects">
                 View Projects
                 <ArrowDown className="ml-2 h-4 w-4" />
               </Link>
             </Button>
 
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" radius="full">
               <Link href="#contact">Get In Touch</Link>
             </Button>
           </div>
 
           <div className="mt-8 flex items-center gap-2">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="rounded-full">
               <a
                 href="https://github.com/AkshayV30"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <BrandIcon name="github" className="h-5 w-5" />
+                <GithubIcon className="h-5 w-5" />
               </a>
             </Button>
 
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="rounded-full">
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <BrandIcon name="linkedin" className="h-5 w-5" />
+                <LinkedinIcon className="h-5 w-5" />
               </a>
             </Button>
           </div>
@@ -76,5 +78,3 @@ export function Hero() {
     </section>
   );
 }
-
-export default Hero;

@@ -1,15 +1,28 @@
 import type { Metadata, Viewport } from "next";
-import { geistSans, geistMono } from "./configs/fonts.config";
-import { siteMetadata, siteViewport } from "./configs/metadata.config";
-import "./globals.css";
 import { Noto_Sans, Playfair_Display } from "next/font/google";
+
 import { cn } from "@/lib/utils";
+import { geistMono, geistSans } from "./configs/fonts.config";
+import { siteMetadata, siteViewport } from "./configs/metadata.config";
 
-const playfairDisplayHeading = Playfair_Display({subsets:['latin'],variable:'--font-heading'});
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
-const notoSans = Noto_Sans({subsets:['latin'],variable:'--font-sans'});
+import "./globals.css";
+
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const playfairDisplayHeading = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
 
 export const metadata: Metadata = siteMetadata;
+
 export const viewport: Viewport = siteViewport;
 
 type RootLayoutProps = Readonly<{
@@ -18,20 +31,19 @@ type RootLayoutProps = Readonly<{
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    // <html
-    //   lang="en"
-    //   className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    // >
-    //   <body className="min-h-full flex flex-col">{children}</body>
-    // </html>
-
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn(geistSans.variable, geistMono.variable, "font-sans", notoSans.variable, playfairDisplayHeading.variable)}
+      className={cn(
+        geistSans.variable,
+        geistMono.variable,
+        notoSans.variable,
+        playfairDisplayHeading.variable,
+        "h-full antialiased",
+      )}
     >
-      <body className="min-h-screen bg-background text-foreground antialiased">
-        {children}
+      <body className="min-h-screen bg-background font-sans text-foreground">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
