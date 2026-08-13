@@ -22,7 +22,7 @@ export const CERTIFICATIONS: Certification[] = [
     ],
     icon: ShieldCheck,
     verificationUrl:
-      "https://www.coursera.org/account/accomplishments/verify/6XHG5UBVEF4E",
+      "https://www.coursera.org/account/accomplishments/professional-cert/C7MJ7NNTXMPR",
     featured: true,
   },
 
@@ -46,22 +46,7 @@ export const CERTIFICATIONS: Certification[] = [
     ],
     icon: TerminalSquare,
     verificationUrl:
-      "https://www.coursera.org/account/accomplishments/verify/EZ833QZ49CVK",
-    featured: true,
-  },
-
-  {
-    id: "aws-fundamentals",
-    name: "AWS Fundamentals",
-    issuer: "Coursera",
-    category: "professional",
-    completed: "April 2025",
-    description:
-      "Hands-on cloud learning including deployment and configuration of an auto-scaling Amazon EC2 virtual machine.",
-    skills: ["AWS", "EC2", "Auto Scaling", "Cloud Computing"],
-    icon: Cloud,
-    verificationUrl:
-      "https://www.coursera.org/account/accomplishments/verify/D6LN8EY06GGR",
+      "https://www.coursera.org/account/accomplishments/professional-cert/LF66EPAQ25KG",
     featured: true,
   },
 

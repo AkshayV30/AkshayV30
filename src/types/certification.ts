@@ -57,3 +57,14 @@ export interface CodingProfile {
   icon: LucideIcon;
   profileUrl: ProfileUrl;
 }
+
+export type Certification = (typeof CERTIFICATIONS)[number];
+export type CourseCertificate = (typeof COURSE_CERTIFICATES)[number];
+
+export interface CertificationCardProps {
+  cert: Certification;
+  courses: CourseCertificate[];
+  isCoursesOpen: boolean;
+  reverse?: boolean;
+  onToggleCourses: () => void;
+}

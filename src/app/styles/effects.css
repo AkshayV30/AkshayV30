@@ -1,0 +1,217 @@
+/* -------------------------------------------------------------------------- */
+/* Rotating credential card                                                  */
+/* -------------------------------------------------------------------------- */
+
+@property --credential-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.rotating-border-card {
+  --credential-angle: 0deg;
+
+  position: relative;
+  isolation: isolate;
+
+  height: 100%;
+
+  border-radius: 1.75rem;
+
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Rotating boundary                                                         */
+/* -------------------------------------------------------------------------- */
+
+.rotating-border-card::before {
+  content: "";
+
+  position: absolute;
+  inset: -1px;
+
+  z-index: -2;
+
+  border-radius: inherit;
+
+  background: conic-gradient(
+    from var(--credential-angle),
+    transparent 0deg,
+    transparent 230deg,
+    var(--credential-blue) 265deg,
+    var(--credential-cyan) 295deg,
+    var(--credential-violet) 320deg,
+    var(--credential-indigo) 340deg,
+    transparent 360deg
+  );
+
+  opacity: 0;
+
+  transition:
+    opacity 300ms ease,
+    filter 300ms ease;
+
+  pointer-events: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Outer glow                                                                 */
+/* -------------------------------------------------------------------------- */
+
+.rotating-border-card__glow {
+  position: absolute;
+  inset: -14px;
+
+  z-index: -3;
+
+  border-radius: inherit;
+
+  background: conic-gradient(
+    from var(--credential-angle),
+    transparent 0deg,
+    transparent 230deg,
+    var(--credential-blue),
+    var(--credential-cyan),
+    var(--credential-violet),
+    transparent 355deg
+  );
+
+  filter: blur(24px);
+  opacity: 0;
+
+  transition:
+    opacity 400ms ease,
+    filter 400ms ease;
+
+  pointer-events: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Card surface                                                               */
+/* -------------------------------------------------------------------------- */
+
+.rotating-border-card__content {
+  position: relative;
+
+  height: 100%;
+
+  overflow: visible;
+
+  border: 1px solid var(--credential-border);
+  border-radius: inherit;
+
+  background: linear-gradient(
+    145deg,
+    color-mix(in oklab, var(--card) 94%, var(--credential-blue)),
+    var(--card)
+  );
+
+  box-shadow:
+    0 18px 45px color-mix(in oklab, var(--foreground) 5%, transparent),
+    0 3px 12px color-mix(in oklab, var(--foreground) 4%, transparent);
+
+  transition:
+    border-color 300ms ease,
+    box-shadow 300ms ease,
+    background 300ms ease;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Hover / active                                                             */
+/* -------------------------------------------------------------------------- */
+
+.rotating-border-card:hover::before,
+.rotating-border-card-active::before {
+  opacity: 1;
+
+  animation: credential-border-spin 3.6s linear infinite;
+}
+
+.rotating-border-card:hover .rotating-border-card__glow,
+.rotating-border-card-active .rotating-border-card__glow {
+  opacity: 0.3;
+
+  animation: credential-border-spin 3.6s linear infinite;
+}
+
+.rotating-border-card:hover .rotating-border-card__content,
+.rotating-border-card-active .rotating-border-card__content {
+  border-color: color-mix(in oklab, var(--credential-blue) 40%, var(--border));
+
+  box-shadow:
+    0 25px 65px var(--credential-shadow),
+    0 8px 24px color-mix(in oklab, var(--credential-glow) 10%, transparent);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Reverse                                                                    */
+/* -------------------------------------------------------------------------- */
+
+.rotating-border-card-reverse:hover::before,
+.rotating-border-card-reverse.rotating-border-card-active::before {
+  animation-name: credential-border-spin-reverse;
+}
+
+.rotating-border-card-reverse:hover .rotating-border-card__glow,
+.rotating-border-card-reverse.rotating-border-card-active
+  .rotating-border-card__glow {
+  animation-name: credential-border-spin-reverse;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Animation                                                                  */
+/* -------------------------------------------------------------------------- */
+
+@keyframes credential-border-spin {
+  from {
+    --credential-angle: 0deg;
+  }
+
+  to {
+    --credential-angle: 360deg;
+  }
+}
+
+@keyframes credential-border-spin-reverse {
+  from {
+    --credential-angle: 360deg;
+  }
+
+  to {
+    --credential-angle: 0deg;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Touch devices                                                              */
+/* -------------------------------------------------------------------------- */
+
+@media (hover: none) {
+  .rotating-border-card:active::before,
+  .rotating-border-card-active::before {
+    opacity: 1;
+  }
+
+  .rotating-border-card:active .rotating-border-card__glow,
+  .rotating-border-card-active .rotating-border-card__glow {
+    opacity: 0.24;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Reduced motion                                                             */
+/* -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .rotating-border-card::before,
+  .rotating-border-card__glow {
+    animation: none !important;
+    transition: none;
+  }
+
+  .rotating-border-card {
+    transform: none !important;
+  }
+}

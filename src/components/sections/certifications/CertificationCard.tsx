@@ -1,228 +1,328 @@
 "use client";
 
-import * as React from "react";
 import { Award, CheckCircle2, ExternalLink, GraduationCap } from "lucide-react";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { RotatingBorderCard } from "@/components/ui/rotating-border-card";
+
+import { certificateIconVariants } from "@/app/motions";
+
+import type { CertificationCardProps } from "@/types/certification";
 
 import { CourseCertificatesPopover } from "./CourseCertificatesPopover";
-
-import { certificateCardHover, certificateIconVariants } from "@/app/motions";
-
-import type { CERTIFICATIONS } from "@/data/certificates";
-import type { COURSE_CERTIFICATES } from "@/data/course-certificate";
-
-type Certification = (typeof CERTIFICATIONS)[number];
-type CourseCertificate = (typeof COURSE_CERTIFICATES)[number];
-
-interface CertificationCardProps {
-  cert: Certification;
-  courses: CourseCertificate[];
-  isCoursesOpen: boolean;
-  onToggleCourses: () => void;
-}
 
 export function CertificationCard({
   cert,
   courses,
   isCoursesOpen,
+  reverse = false,
   onToggleCourses,
 }: CertificationCardProps) {
-  const shouldReduceMotion = useReducedMotion();
-
   const Icon = cert.icon;
 
   return (
-    <motion.article
-      whileHover={shouldReduceMotion ? undefined : certificateCardHover}
-      className="h-full"
-    >
-      <Card
-        className={[
-          "group relative h-full overflow-visible",
-          "rounded-3xl",
-          "border-border/60",
-          "bg-card/95",
-          "shadow-sm",
-          "transition-[border-color,box-shadow]",
-          "duration-300",
-          "hover:border-primary/25",
-          "hover:shadow-xl",
-        ].join(" ")}
+    <>
+      <RotatingBorderCard
+        active={isCoursesOpen}
+        reverse={reverse}
+        className="h-full"
+        aria-label={`${cert.name} certification`}
       >
-        {/* Top accent */}
-        <div
-          aria-hidden="true"
+        <article
           className={[
-            "pointer-events-none absolute inset-x-10 top-0 h-px",
-            "bg-gradient-to-r",
-            "from-transparent via-primary/60 to-transparent",
-            "opacity-0 transition-opacity duration-300",
-            "group-hover:opacity-100",
+            "relative flex h-full min-h-[440px] flex-col",
+            "p-5 sm:p-6 lg:p-7",
           ].join(" ")}
-        />
+        >
+          {/* ============================================================ */}
+          {/* HEADER — FIXED HEIGHT                                        */}
+          {/* ============================================================ */}
 
-        {/* Soft background glow */}
-        <div
-          aria-hidden="true"
-          className={[
-            "pointer-events-none absolute -right-16 -top-16",
-            "h-32 w-32 rounded-full",
-            "bg-primary/5 blur-3xl",
-            "opacity-0 transition-opacity duration-500",
-            "group-hover:opacity-100",
-          ].join(" ")}
-        />
+          <header
+            className={[
+              "flex shrink-0 items-center",
+              "h-[82px] sm:h-[88px] lg:h-[92px]",
+              "gap-4 sm:gap-5",
+            ].join(" ")}
+          >
+            {/* Certificate icon */}
 
-        <CardContent className="relative flex h-full flex-col p-6 sm:p-7">
-          {/* Header */}
-          <div className="flex items-start gap-4">
             <motion.div
               variants={certificateIconVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
               className={[
-                "flex h-12 w-12 shrink-0 items-center justify-center",
+                "relative flex h-12 w-12 shrink-0",
+                "items-center justify-center",
                 "rounded-2xl",
-                "border border-primary/15",
-                "bg-primary/10",
+                "border border-primary/20",
+                "bg-primary/8",
                 "text-primary",
-                "shadow-sm",
-                "transition-all duration-300",
-                "group-hover:border-primary/25",
-                "group-hover:bg-primary/15",
+                "shadow-[0_0_25px_color-mix(in_oklab,var(--primary)_8%,transparent)]",
               ].join(" ")}
             >
               <Icon className="h-5 w-5" strokeWidth={1.8} aria-hidden="true" />
+
+              <span
+                className={[
+                  "absolute -right-1 -top-1",
+                  "flex h-4 w-4 items-center justify-center",
+                  "rounded-full",
+                  "border-2 border-card",
+                  "bg-primary",
+                  "text-primary-foreground",
+                ].join(" ")}
+              >
+                <CheckCircle2 className="h-2.5 w-2.5" aria-hidden="true" />
+              </span>
             </motion.div>
 
-            <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-1.5">
-                <p className="truncate text-[10px] font-semibold uppercase tracking-[0.15em] text-muted-foreground">
-                  {cert.issuer}
-                </p>
+            {/* Issuer + certification title */}
 
-                <CheckCircle2
-                  className="h-3.5 w-3.5 shrink-0 text-primary"
-                  aria-label="Verified credential"
-                />
-              </div>
+            <div
+              className={[
+                "flex min-w-0 flex-1 flex-col justify-center",
+                "overflow-hidden",
+              ].join(" ")}
+            >
+              <p
+                className={[
+                  "truncate",
+                  "text-[10px] font-semibold uppercase",
+                  "tracking-[0.18em]",
+                  "text-muted-foreground",
+                ].join(" ")}
+              >
+                {cert.issuer}
+              </p>
 
-              <h3 className="mt-1.5 text-lg font-semibold leading-snug tracking-tight">
+              <h3
+                className={[
+                  "mt-2",
+                  "line-clamp-2",
+                  "text-base font-semibold leading-snug tracking-tight",
+                  "sm:text-lg",
+                ].join(" ")}
+              >
                 {cert.name}
               </h3>
             </div>
-          </div>
+          </header>
 
-          {/* Completion */}
-          {cert.completed && (
-            <div className="mt-5">
+          {/* ============================================================ */}
+          {/* COMPLETION — FIXED ROW                                       */}
+          {/* ============================================================ */}
+
+          <div className="mt-5 flex h-[27px] shrink-0 items-center">
+            {cert.completed ? (
               <Badge
                 variant="secondary"
                 className={[
                   "rounded-full",
-                  "border border-border/60",
-                  "bg-muted/40",
+                  "border border-primary/10",
+                  "bg-primary/5",
                   "px-2.5 py-1",
-                  "text-[11px] font-medium",
+                  "text-[10px] font-medium",
+                  "text-muted-foreground",
                 ].join(" ")}
               >
                 Completed {cert.completed}
               </Badge>
-            </div>
-          )}
+            ) : (
+              <span aria-hidden="true" className="invisible text-[10px]">
+                Completed
+              </span>
+            )}
+          </div>
 
-          {/* Description */}
-          <p className="mt-4 text-sm leading-6 text-muted-foreground">
-            {cert.description}
-          </p>
+          {/* ============================================================ */}
+          {/* DESCRIPTION — NATURAL / RESPONSIVE HEIGHT                    */}
+          {/* ============================================================ */}
 
-          {/* Skills */}
-          <div className="mt-5">
-            <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.15em] text-muted-foreground">
-              Core skills
+          <section className="mt-4 shrink-0">
+            <p className="text-sm leading-6 text-muted-foreground">
+              {cert.description}
             </p>
+          </section>
 
-            <div className="flex flex-wrap gap-1.5">
+          {/* ============================================================ */}
+          {/* CAPABILITIES — NATURAL HEIGHT                                */}
+          {/* ============================================================ */}
+
+          <section
+            className="mt-6 shrink-0"
+            aria-label={`${cert.name} capabilities`}
+          >
+            <div className="mb-3 flex items-center justify-center gap-2">
+              <span className="h-px w-full max-w-[60px] shrink-0 bg-primary/50" />
+
+              <span
+                className={[
+                  "whitespace-nowrap",
+                  "text-[10px] font-semibold uppercase",
+                  "tracking-[0.18em]",
+                  "text-muted-foreground",
+                ].join(" ")}
+              >
+                Capability
+              </span>
+
+              <span className="h-px w-full max-w-[60px] shrink-0 bg-primary/50" />
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-1.5">
               {cert.skills.map((skill) => (
                 <Badge
                   key={skill}
                   variant="secondary"
                   className={[
                     "rounded-lg",
-                    "border border-border/50",
-                    "bg-muted/40",
+                    "border border-border/60",
+                    "bg-muted/35",
                     "px-2.5 py-1",
                     "text-xs font-medium",
+                    "text-muted-foreground",
                     "transition-colors duration-200",
-                    "group-hover:border-primary/15",
-                    "group-hover:bg-primary/5",
+                    "hover:border-primary/20",
+                    "hover:bg-primary/5",
+                    "hover:text-foreground",
                   ].join(" ")}
                 >
                   {skill}
                 </Badge>
               ))}
             </div>
-          </div>
+          </section>
 
-          <div className="flex-1" />
+          {/* ============================================================ */}
+          {/* FLEXIBLE SPACE                                                */}
+          {/* ============================================================ */}
 
-          {/* Actions */}
-          <div className="relative mt-6 flex flex-wrap items-center gap-2 border-t border-border/50 pt-5">
-            {cert.verificationUrl && (
-              <Button size="sm" className="rounded-xl">
-                <a
-                  href={cert.verificationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Verify credential
-                  <ExternalLink className="ml-2 h-3.5 w-3.5" />
-                </a>
-              </Button>
-            )}
+          <div className="min-h-6 flex-1" aria-hidden="true" />
 
-            {courses.length > 0 && (
-              <Button
-                type="button"
-                size="sm"
-                variant="outline"
-                onClick={onToggleCourses}
-                aria-expanded={isCoursesOpen}
-                className="rounded-xl"
-              >
-                <GraduationCap className="mr-2 h-3.5 w-3.5" />
-                {courses.length} courses
-                <span
+          {/* ============================================================ */}
+          {/* ACTIONS — FIXED STRUCTURAL HEIGHT                             */}
+          {/* ============================================================ */}
+
+          <section
+            className={[
+              "mt-6 shrink-0",
+              "border-t border-border/50",
+              "pt-5",
+            ].join(" ")}
+            aria-label="Certification actions"
+          >
+            <div
+              className={[
+                "flex min-h-[36px]",
+                "flex-wrap items-center justify-center",
+                "gap-2",
+              ].join(" ")}
+            >
+              {/* Verification */}
+
+              {cert.verificationUrl && (
+                <Button
+                  size="sm"
+                  radius="lg"
                   className={[
-                    "ml-2 inline-block transition-transform duration-200",
-                    isCoursesOpen ? "rotate-180" : "",
+                    "group",
+                    "cursor-pointer",
+                    "transition-transform duration-200",
+                    "hover:-translate-y-0.5",
+                    "hover:bg-primary",
+                    "hover:text-primary-foreground",
                   ].join(" ")}
                 >
-                  ↓
-                </span>
-              </Button>
-            )}
+                  <a
+                    href={cert.verificationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex"
+                    aria-label={`Verify ${cert.name}`}
+                  >
+                    <span>Verify credential</span>
 
-            {/* Floating coursework panel */}
-            {courses.length > 0 && (
-              <CourseCertificatesPopover
-                courses={courses}
-                open={isCoursesOpen}
-                onClose={onToggleCourses}
-              />
-            )}
-          </div>
+                    <ExternalLink
+                      className={[
+                        "ml-2 h-3.5 w-3.5 shrink-0",
+                        "transition-transform duration-200 ease-out",
+                        "group-hover:translate-x-0.5",
+                        "group-hover:-translate-y-0.5",
+                      ].join(" ")}
+                      aria-hidden="true"
+                    />
+                  </a>
+                </Button>
+              )}
 
-          {/* Footer */}
-          <div className="mt-5 flex items-center gap-2 text-[11px] text-muted-foreground">
-            <Award className="h-3.5 w-3.5 text-primary/70" />
+              {/* Course certificates */}
 
-            <span>Independently verifiable credential</span>
-          </div>
-        </CardContent>
-      </Card>
-    </motion.article>
+              {courses.length > 0 && (
+                <Button
+                  type="button"
+                  size="sm"
+                  radius="lg"
+                  variant="outline"
+                  onClick={onToggleCourses}
+                  aria-expanded={isCoursesOpen}
+                  aria-haspopup="dialog"
+                  className={[
+                    "cursor-pointer",
+                    "transition-transform duration-200",
+                    "hover:-translate-y-0.5",
+                    "hover:border-primary/25",
+                    "hover:bg-primary/5",
+                  ].join(" ")}
+                >
+                  <GraduationCap
+                    className="mr-2 h-3.5 w-3.5"
+                    aria-hidden="true"
+                  />
+                  {courses.length} {courses.length === 1 ? "course" : "courses"}
+                </Button>
+              )}
+            </div>
+          </section>
+
+          {/* ============================================================ */}
+          {/* FOOTER                         */}
+          {/* ============================================================ */}
+
+          <footer
+            className={[
+              "mt-5 shrink-0",
+              "flex items-start gap-2",
+              "h-[40px] sm:h-[44px]",
+              "text-[10px] leading-4",
+              "text-muted-foreground",
+            ].join(" ")}
+          >
+            <Award
+              className={[
+                "mt-0.5 h-3.5 w-3.5 shrink-0",
+                "text-primary/70",
+              ].join(" ")}
+              aria-hidden="true"
+            />
+
+            <span className="leading-4">
+              Independently verifiable credential
+            </span>
+          </footer>
+        </article>
+      </RotatingBorderCard>
+
+      <CourseCertificatesPopover
+        courses={courses}
+        open={isCoursesOpen}
+        onClose={onToggleCourses}
+      />
+    </>
   );
 }
+
+export default CertificationCard;
