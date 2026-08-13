@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-import { CourseCertificateItem } from "./CourseCertificateItem";
+import { CourseCertificateItem } from "./Item";
 
 import type { COURSE_CERTIFICATES } from "@/data/course-certificate";
 

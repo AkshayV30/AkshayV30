@@ -18,9 +18,7 @@ export function CourseCertificatesFooter() {
           aria-hidden="true"
         />
 
-        <p>
-          Each course includes an independent credential link where available.
-        </p>
+        <p>Each course includes an independent credential links.</p>
       </div>
     </footer>
   );

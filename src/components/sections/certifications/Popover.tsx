@@ -8,10 +8,10 @@ import { certificatePopoverVariants } from "@/app/motions";
 
 import { useCertificateDialog } from "./use-certificates-dialog";
 
-import { CourseCertificatesHeader } from "./CourseCertificatesHeader";
-import { CourseCertificatesSummary } from "./CourseCertificatesSummary";
-import { CourseCertificatesList } from "./CourseCertificatesList";
-import { CourseCertificatesFooter } from "./CourseCertificatesFooter";
+import { CourseCertificatesHeader } from "./Header";
+import { CourseCertificatesSummary } from "./Summary";
+import { CourseCertificatesList } from "./List";
+import { CourseCertificatesFooter } from "./Footer";
 
 import type { COURSE_CERTIFICATES } from "@/data/course-certificate";
 

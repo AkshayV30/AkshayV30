@@ -11,7 +11,7 @@ import { certificateIconVariants } from "@/app/motions";
 
 import type { CertificationCardProps } from "@/types/certification";
 
-import { CourseCertificatesPopover } from "./CourseCertificatesPopover";
+import { CourseCertificatesPopover } from "./Popover";
 
 export function CertificationCard({
   cert,

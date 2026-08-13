@@ -2,10 +2,10 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import ThemeToggle from "@/components/layout/ThemeToggle";
 
 import {
@@ -16,15 +16,21 @@ import {
   navItemVariants,
 } from "@/app/motions";
 
-const navLinks = [
-  { href: "#hero", label: "Home" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#certificates", label: "Certificates" },
-  { href: "#case-studies", label: "Case Studies" },
-  { href: "#contact", label: "Contact" },
-];
+interface NavLink {
+  href: string;
+  label: string;
+}
+
+const NAV_LINKS: readonly NavLink[] = [
+  { href: "/#hero", label: "Home" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#certificates", label: "Certificates" },
+  { href: "/#Education", label: "Education" },
+  { href: "/#case-studies", label: "Case Studies" },
+  { href: "/#contact", label: "Contact" },
+] as const;
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -33,6 +39,14 @@ export default function Header() {
     setIsOpen(false);
   }, []);
 
+  const { scrollYProgress } = useScroll();
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 20,
+    restDelta: 0.001,
+  });
+
   return (
     <motion.header
       variants={headerContainerVariants}
@@ -40,7 +54,7 @@ export default function Header() {
       animate="visible"
       className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60"
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
+      <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
         <motion.div
           variants={navItemVariants}
@@ -48,15 +62,15 @@ export default function Header() {
           transition={{ duration: 0.2 }}
         >
           <Link
-            href="#hero"
+            href="/#hero"
             onClick={closeMenu}
-            className="font-heading text-xl font-semibold tracking-tight"
+            className="font-heading text-xl font-semibold tracking-tight transition-colors hover:text-primary"
           >
             Akshay Minz
           </Link>
         </motion.div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Nav */}
         <motion.nav
           aria-label="Primary navigation"
           variants={desktopNavVariants}
@@ -64,24 +78,17 @@ export default function Header() {
           animate="visible"
           className="hidden items-center gap-5 md:flex"
         >
-          {navLinks.map((link) => (
-            <motion.div key={link.href} variants={navItemVariants}>
+          {NAV_LINKS.map(({ href, label }) => (
+            <motion.div key={href} variants={navItemVariants}>
               <Link
-                href={link.href}
-                className="relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                href={href}
+                className="relative rounded-sm text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/40"
               >
-                {link.label}
+                {label}
               </Link>
             </motion.div>
           ))}
 
-          <motion.div {...buttonHover}>
-            <Button size="sm" radius="sm">
-              <Link href="#contact">Hire Me</Link>
-            </Button>
-          </motion.div>
-
-          {/* ThemeToggle handle motions internally, wrapped in standard nav entry tree */}
           <motion.div variants={navItemVariants}>
             <ThemeToggle />
           </motion.div>
@@ -91,11 +98,15 @@ export default function Header() {
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
 
-          <Button
-            variant="ghost"
-            size="icon"
+          <button
+            type="button"
+            className={buttonVariants({
+              variant: "ghost",
+              size: "icon",
+            })}
             aria-label={isOpen ? "Close navigation" : "Open navigation"}
             aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
             onClick={() => setIsOpen((open) => !open)}
           >
             <AnimatePresence mode="wait" initial={false}>
@@ -123,9 +134,46 @@ export default function Header() {
                 </motion.span>
               )}
             </AnimatePresence>
-          </Button>
+          </button>
         </div>
       </div>
+
+      {/* Mobile Nav Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.nav
+            id="mobile-navigation"
+            aria-label="Mobile navigation"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{
+              duration: 0.2,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="overflow-hidden border-t md:hidden"
+          >
+            <div className="mx-auto flex max-w-7xl flex-col px-6 py-4 lg:px-8">
+              {NAV_LINKS.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={closeMenu}
+                  className="rounded-md px-3 py-3 text-sm font-medium text-muted-foreground transition-colors duration-200 hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/40"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
+
+      {/* Scroll progress */}
+      <motion.div
+        className="absolute bottom-0 left-0 right-0 h-[2px] origin-left bg-primary will-change-transform"
+        style={{ scaleX }}
+      />
     </motion.header>
   );
 }

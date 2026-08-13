@@ -13,7 +13,7 @@ import {
   certificateContainerVariants,
 } from "@/app/motions";
 
-import { CertificationCard } from "./CertificationCard";
+import { CertificationCard } from "./Card";
 
 export function Certificates() {
   const shouldReduceMotion = useReducedMotion();

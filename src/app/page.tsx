@@ -3,12 +3,12 @@ import Footer from "@/components/layout/Footer";
 
 import Hero from "@/components/sections/Hero";
 import Skills from "@/components/sections/Skills";
-import Projects from "@/components/sections/Projects";
+import Projects from "@/components/sections/projects/Projects";
 import Experience from "@/components/sections/Experience/Experience";
 import Certificates from "@/components/sections/certifications/Certificates";
-import CaseStudies from "@/components/sections/CaseStudies";
+import CaseStudies from "@/components/sections/caseStudies/CaseStudies";
 import Contact from "@/components/sections/Contact";
-import VerifiedProfiles from "@/components/sections/VerifiedProfiles";
+import VerifiedProfiles from "@/components/sections/verifiedProfiles/VerifiedProfiles";
 import Education from "@/components/sections/Education";
 
 export default function Home() {

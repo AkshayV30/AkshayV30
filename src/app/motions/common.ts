@@ -1,5 +1,7 @@
 import type { TargetAndTransition, Variants } from "framer-motion";
 
+export const motionEase = [0.22, 1, 0.36, 1] as const;
+
 export const buttonHover: {
   whileHover: TargetAndTransition;
   whileTap: TargetAndTransition;
@@ -22,9 +24,10 @@ export const fadeUpVariants: Variants = {
   visible: {
     opacity: 1,
     y: 0,
+
     transition: {
       duration: 0.4,
-      ease: "easeOut",
+      ease: motionEase,
     },
   },
 };
@@ -34,6 +37,6 @@ export const cardHover: TargetAndTransition = {
 
   transition: {
     duration: 0.22,
-    ease: "easeOut",
+    ease: motionEase,
   },
 };
