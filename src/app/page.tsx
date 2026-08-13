@@ -21,10 +21,10 @@ export default function Home() {
         <Skills />
         <Projects />
         <Experience />
-        <Education />
         <Certificates />
         <VerifiedProfiles />
         <CaseStudies />
+        <Education />
         <Contact />
       </main>
 

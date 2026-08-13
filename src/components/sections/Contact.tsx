@@ -1,9 +1,32 @@
 import { Mail } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import { GithubIcon, LinkedinIcon } from "@/lib/icons/SocialIcons";
+
+const CONTACT_LINKS = [
+  {
+    label: "Email Me",
+    href: "mailto:akshayatwork.v30@gmail.com",
+    icon: Mail,
+    variant: "default" as const,
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/AkshayV30",
+    icon: GithubIcon,
+    variant: "outline" as const,
+    external: true,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/minzakshaykumar03/",
+    icon: LinkedinIcon,
+    variant: "outline" as const,
+    external: true,
+  },
+];
 
 export default function Contact() {
   return (
@@ -21,34 +44,20 @@ export default function Contact() {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Button>
-              <a href="mailto:your@email.com">
-                <Mail className="h-4 w-4" />
-                <span className="ml-2">Email Me</span>
-              </a>
-            </Button>
-
-            <Button variant="outline">
-              <a
-                href="https://github.com/AkshayV30"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GithubIcon className="mr-2 h-4 w-4" />
-                <span className="ml-2">GitHub</span>
-              </a>
-            </Button>
-
-            <Button variant="outline">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedinIcon className="mr-2 h-4 w-4" />
-                <span className="ml-2">LinkedIn</span>
-              </a>
-            </Button>
+            {CONTACT_LINKS.map(
+              ({ label, href, icon: Icon, variant, external }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target={external ? "_blank" : undefined}
+                  rel={external ? "noopener noreferrer" : undefined}
+                  className={`${buttonVariants({ variant })} gap-2 flex`}
+                >
+                  <Icon className="h-4 w-4" aria-hidden="true" />
+                  <span>{label}</span>
+                </a>
+              ),
+            )}
           </div>
         </CardContent>
       </Card>

@@ -627,6 +627,40 @@
     grid-row-start: 1;
   }
 
+  .container {
+    width: 100%;
+  }
+
+  @media (min-width: 40rem) {
+    .container {
+      max-width: 40rem;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .container {
+      max-width: 48rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .container {
+      max-width: 64rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .container {
+      max-width: 80rem;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .container {
+      max-width: 96rem;
+    }
+  }
+
   .-mx-1\.5 {
     margin-inline: calc(var(--spacing) * -1.5);
   }
@@ -1291,6 +1325,12 @@
     margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
   }
 
+  :where(.space-y-5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
   :where(.space-y-10 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 10) * var(--tw-space-y-reverse));
@@ -1649,6 +1689,16 @@
     }
   }
 
+  .bg-muted\/30 {
+    background-color: var(--muted);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-muted\/30 {
+      background-color: color-mix(in oklab, var(--muted) 30%, transparent);
+    }
+  }
+
   .bg-muted\/35 {
     background-color: var(--muted);
   }
@@ -1781,6 +1831,21 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+  .via-primary\/40 {
+    --tw-gradient-via: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-primary\/40 {
+      --tw-gradient-via: color-mix(in oklab, var(--primary) 40%, transparent);
+    }
+  }
+
+  .via-primary\/40 {
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+
   .via-primary\/50 {
     --tw-gradient-via: var(--primary);
   }
@@ -1807,6 +1872,10 @@
 
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
 
   .p-2\.5 {
@@ -2148,6 +2217,16 @@
     color: var(--foreground);
   }
 
+  .text-foreground\/70 {
+    color: var(--foreground);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-foreground\/70 {
+      color: color-mix(in oklab, var(--foreground) 70%, transparent);
+    }
+  }
+
   .text-muted-foreground {
     color: var(--muted-foreground);
   }
@@ -2181,6 +2260,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .text-primary\/70 {
       color: color-mix(in oklab, var(--primary) 70%, transparent);
+    }
+  }
+
+  .text-primary\/80 {
+    color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-primary\/80 {
+      color: color-mix(in oklab, var(--primary) 80%, transparent);
     }
   }
 
@@ -2451,6 +2540,16 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
 
+    .group-hover\:border-primary\/15:is(:where(.group):hover *) {
+      border-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-hover\:border-primary\/15:is(:where(.group):hover *) {
+        border-color: color-mix(in oklab, var(--primary) 15%, transparent);
+      }
+    }
+
     .group-hover\:border-primary\/20:is(:where(.group):hover *) {
       border-color: var(--primary);
     }
@@ -2714,7 +2813,7 @@
       }
     }
 
-    .hover\:bg-card\/90:hover {
+    .hover\:bg-card:hover, .hover\:bg-card\/90:hover {
       background-color: var(--card);
     }
 
@@ -3360,6 +3459,11 @@
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
+
+    .sm\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
   }
 
   @media (min-width: 48rem) {
@@ -3486,6 +3590,12 @@
     .lg\:text-7xl {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 
