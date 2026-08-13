@@ -14,7 +14,7 @@ import {
   headerContainerVariants,
   iconVariants,
   navItemVariants,
-} from "@/app/configs/motion.config";
+} from "@/app/motions";
 
 const navLinks = [
   { href: "#hero", label: "Home" },

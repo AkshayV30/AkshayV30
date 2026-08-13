@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
       "Automated application build and deployment pipeline using GitHub Actions and Docker.",
     technologies: ["GitHub Actions", "Docker", "CI/CD"],
     github: "https://github.com/AkshayV30",
-    featured: true,
+    liveLink: "",
   },
   {
     title: "Full Stack Application",
@@ -15,7 +15,6 @@ export const PROJECTS: Project[] = [
       "Scalable full-stack application with a TypeScript backend, PostgreSQL database and modern React frontend.",
     technologies: ["React", "Node.js", "TypeScript", "PostgreSQL"],
     github: "https://github.com/AkshayV30",
-    featured: true,
   },
   {
     title: "FFT Audio Visualizer",
@@ -30,7 +29,6 @@ export const PROJECTS: Project[] = [
       "Employee management system designed for managing staff information and administrative workflows.",
     technologies: ["Node.js", "TypeScript", "MongoDB", "REST API"],
     github: "https://github.com/AkshayV30",
-    featured: true,
   },
   {
     title: "AI Talent Scouting Agent",

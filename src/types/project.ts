@@ -2,7 +2,6 @@ export interface Project {
   title: string;
   description: string;
   technologies: string[];
-  link?: string;
+  liveLink?: string;
   github?: string;
-  featured?: boolean;
 }

@@ -8,7 +8,7 @@ import {
   sectionContentVariants,
   sectionHeaderVariants,
   sectionVariants,
-} from "@/app/configs/motion.config";
+} from "@/app/motions";
 
 interface SectionProps {
   id: string;
