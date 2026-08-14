@@ -1,26 +1,23 @@
-import { LucideIcon } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-export type CertificationName =
-  | "Google Cybersecurity"
-  | "IBM DevOps"
-  | "AWS Fundamentals";
+export type CertificationCategory =
+  | "professional"
+  | "skill-badge"
+  | "course";
 
-export type CredentialUrl = `https://credly.com{string}` | `https://${string}`;
 export type ProfileUrl = `https://${string}`;
 
-export type CertificationCategory = "professional" | "skill-badge" | "course";
-
-export type CourseCertificate = {
+export interface CourseCertificate {
   id: string;
   name: string;
   issuer: string;
   completed: string;
   grade?: string;
-  verificationUrl: string;
+  verificationUrl: ProfileUrl;
   parentCredentialId: string;
-};
+}
 
-export type Certification = {
+export interface Certification {
   id: string;
   name: string;
   issuer: string;
@@ -29,10 +26,9 @@ export type Certification = {
   description: string;
   skills: string[];
   icon: LucideIcon;
-  verificationUrl?: string;
-
+  verificationUrl?: ProfileUrl;
   featured?: boolean;
-};
+}
 
 export interface LearningMilestone {
   name: string;
@@ -56,15 +52,4 @@ export interface CodingProfile {
   stats: readonly StatItem[];
   icon: LucideIcon;
   profileUrl: ProfileUrl;
-}
-
-export type Certification = (typeof CERTIFICATIONS)[number];
-export type CourseCertificate = (typeof COURSE_CERTIFICATES)[number];
-
-export interface CertificationCardProps {
-  cert: Certification;
-  courses: CourseCertificate[];
-  isCoursesOpen: boolean;
-  reverse?: boolean;
-  onToggleCourses: () => void;
 }
