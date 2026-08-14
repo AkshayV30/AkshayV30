@@ -9,7 +9,18 @@ import { RotatingBorderCard } from "@/components/ui/rotating-border-card";
 
 import { certificateIconVariants } from "@/app/motions";
 
-import type { CertificationCardProps } from "@/types/certification";
+import type {
+  Certification,
+  CourseCertificate,
+} from "@/types/certification";
+
+ interface CertificationCardProps {
+  cert: Certification;
+  courses: CourseCertificate[];
+  isCoursesOpen: boolean;
+  reverse?: boolean;
+  onToggleCourses: () => void;
+}
 
 import { CourseCertificatesPopover } from "./Popover";
 
