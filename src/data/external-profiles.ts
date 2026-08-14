@@ -32,7 +32,7 @@ export const EXTERNAL_PROFILES: VerificationProfile[] = [
     eyebrow: "Cloud skill badges",
     description:
       "Public Google Cloud profile showcasing hands-on skill badges across cloud infrastructure, Terraform, AI agents, Gemini, and multimodal generative AI.",
-    url: "https://www.skills.google/public_profiles/2ef583cc-4bfc-466-ab95-d10bf23bee13",
+    url: "https://www.skills.google/public_profiles/2ef583cc-4bfc-4668-ab95-d10bf23bee13",
     icon: Cloud,
     highlights: [
       "6 skill badges",
