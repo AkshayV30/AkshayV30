@@ -9,7 +9,6 @@ import { buttonVariants } from "@/components/ui/button";
 import ThemeToggle from "@/components/layout/ThemeToggle";
 
 import {
-  buttonHover,
   desktopNavVariants,
   headerContainerVariants,
   iconVariants,
@@ -26,8 +25,8 @@ const NAV_LINKS: readonly NavLink[] = [
   { href: "/#skills", label: "Skills" },
   { href: "/#projects", label: "Projects" },
   { href: "/#experience", label: "Experience" },
-  { href: "/#certificates", label: "Certificates" },
-  { href: "/#Education", label: "Education" },
+  { href: "/#certifications", label: "Certifications" },
+  { href: "/#education", label: "Education" },
   { href: "/#case-studies", label: "Case Studies" },
   { href: "/#contact", label: "Contact" },
 ] as const;

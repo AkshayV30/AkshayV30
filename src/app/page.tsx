@@ -2,7 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 import Hero from "@/components/sections/Hero";
-import Skills from "@/components/sections/Skills";
+import Skills from "@/components/sections/skills/Skills";
 import Projects from "@/components/sections/projects/Projects";
 import Experience from "@/components/sections/Experience/Experience";
 import Certificates from "@/components/sections/certifications/Certificates";

@@ -1,0 +1,61 @@
+{
+  "runtimes": {
+    "nodejs": {
+      "alt": "Node.js",
+      "dark": "/logos/backends/runtimes/nodejs/nodejs.svg",
+      "light": "/logos/backends/runtimes/nodejs/nodejs.svg"
+    },
+    "nodejsDark": {
+      "alt": "Node.js",
+      "dark": "/logos/backends/runtimes/nodejs/nodejsDark.svg",
+      "light": "/logos/backends/runtimes/nodejs/nodejsDark.svg"
+    },
+    "nodejsHex": {
+      "alt": "Node.js",
+      "dark": "/logos/backends/runtimes/nodejs/nodejsHex.svg",
+      "light": "/logos/backends/runtimes/nodejs/nodejsHex.svg"
+    },
+    "nodejsLight": {
+      "alt": "Node.js",
+      "dark": "/logos/backends/runtimes/nodejs/nodejsLight.svg",
+      "light": "/logos/backends/runtimes/nodejs/nodejsLight.svg"
+    }
+  },
+
+  "frameworks": {
+    "fastapi": {
+      "alt": "FastAPI",
+      "dark": "/logos/backends/frameworks/fastapi.svg",
+      "light": "/logos/backends/frameworks/fastapi.svg"
+    },
+    "express": {
+      "alt": "Express.js",
+      "dark": "/logos/backends/frameworks/express.svg",
+      "light": "/logos/backends/frameworks/express.svg"
+    }
+  },
+
+  "api": {
+    "rest": {
+      "alt": "REST API",
+      "dark": "/logos/backends/api/rest-api.svg",
+      "light": "/logos/backends/api/rest-api.svg"
+    }
+  },
+
+  "authentication": {
+    "jwt": {
+      "alt": "JSON Web Token",
+      "dark": "/logos/backends/auth/jwt.svg",
+      "light": "/logos/backends/auth/jwt.svg"
+    }
+  },
+
+  "orm": {
+    "prisma": {
+      "alt": "Prisma",
+      "dark": "/logos/backends/orm/prisma-dark.svg",
+      "light": "/logos/backends/orm/prisma-light.svg"
+    }
+  }
+}

@@ -9,7 +9,7 @@ import {
 } from "@/app/motions";
 
 interface TypewriterProps {
-  roles: string[];
+  roles: readonly string[];
   typingSpeed?: number;
   deletingSpeed?: number;
   pauseDuration?: number;

@@ -10,9 +10,9 @@ export default function VerifiedProfileHighlights({
   }
 
   return (
-    <div className="mt-5 space-y-2.5">
+    <ul className="mt-5 space-y-2.5">
       {highlights.map((highlight) => (
-        <div
+        <li
           key={highlight}
           className="flex items-start gap-2.5 text-xs leading-5 text-muted-foreground"
         >
@@ -22,8 +22,8 @@ export default function VerifiedProfileHighlights({
           />
 
           <span>{highlight}</span>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

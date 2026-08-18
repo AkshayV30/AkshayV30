@@ -4,10 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import type { VerificationProfile } from "@/types/verification";
 
-import VerifiedProfileHighlights from "./Highlights";
-import VerifiedProfileHeader from "./Header";
-import VerifiedProfileCTA from "./CTA";
 import VerifiedProfileAccent from "./Accent";
+import VerifiedProfileCTA from "./CTA";
+import VerifiedProfileHeader from "./Header";
+import VerifiedProfileHighlights from "./Highlights";
 
 interface VerifiedProfileCardProps {
   profile: VerificationProfile;
@@ -34,11 +34,7 @@ export default function VerifiedProfileCard({
       <VerifiedProfileAccent />
 
       <CardContent className="flex h-full flex-col p-6">
-        <VerifiedProfileHeader
-          Icon={profile.icon}
-          eyebrow={profile.eyebrow}
-          name={profile.name}
-        />
+        <VerifiedProfileHeader profile={profile} />
 
         <p className="mt-5 text-sm leading-6 text-muted-foreground">
           {profile.description}

@@ -1,76 +1,102 @@
 "use client";
 
 import * as React from "react";
-import { Laptop, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 import { useTheme } from "next-themes";
-import { motion, AnimatePresence } from "framer-motion";
 
-import { Button } from "@/components/ui/button";
 import { buttonHover, iconVariants } from "@/app/motions";
+import { Button } from "@/components/ui/button";
 
-type Theme = "light" | "dark" | "system";
+type Theme = "light" | "dark";
+type ThemePreference = Theme | "system";
+
+const THEME_CYCLE: Record<Theme, Theme> = {
+  light: "dark",
+  dark: "light",
+};
 
 interface ThemeConfig {
-  value: Theme;
   label: string;
   icon: React.ComponentType<{ className?: string }>;
 }
 
-const THEME_CONFIGS: Record<Theme, ThemeConfig> = {
-  light: { value: "light", label: "Light", icon: Sun },
-  dark: { value: "dark", label: "Dark", icon: Moon },
-  system: { value: "system", label: "System", icon: Laptop },
+const THEME_CONFIG: Record<Theme, ThemeConfig> = {
+  light: {
+    label: "Light",
+    icon: Sun,
+  },
+  dark: {
+    label: "Dark",
+    icon: Moon,
+  },
 };
 
-const NEXT_THEME_CYCLE: Record<Theme, Theme> = {
-  system: "light",
-  light: "dark",
-  dark: "system",
-};
-
-/**
- * High-performance hydration guard using React 18 external store.
- * Prevents Layout Shifts (CLS) without triggering extra renders like useEffect.
- */
-function useIsHydrated(): boolean {
-  return React.useSyncExternalStore(
-    React.useCallback(() => () => {}, []),
-    () => true,
-    () => false,
-  );
+function isTheme(value: string | undefined): value is Theme {
+  return value === "light" || value === "dark";
 }
 
 export default function ThemeToggle() {
   const { theme, resolvedTheme, setTheme } = useTheme();
-  const isHydrated = useIsHydrated();
 
-  // Validate Next-Themes string values cleanly
-  const activeTheme: Theme =
+  // Deterministic state hydration tracking
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    // Defers execution slightly to avoid synchronous cascading renders
+    const frameId = requestAnimationFrame(() => {
+      setMounted(true);
+    });
+    return () => cancelAnimationFrame(frameId);
+  }, []);
+
+  /*
+   * next-themes can return:
+   * "light", "dark", "system", or undefined during hydration.
+   *
+   * We intentionally keep "system" as a valid preference,
+   * but the UI only exposes Light and Dark.
+   */
+  const preference: ThemePreference =
     theme === "light" || theme === "dark" || theme === "system"
       ? theme
       : "system";
 
-  const currentConfig = THEME_CONFIGS[activeTheme];
+  /*
+   * If the user has not selected Light/Dark yet, use the
+   * currently resolved system theme as the visual state.
+   */
+  const activeTheme: Theme = isTheme(preference)
+    ? preference
+    : isTheme(resolvedTheme)
+      ? resolvedTheme
+      : "light";
+
+  const currentConfig = THEME_CONFIG[activeTheme];
   const DisplayIcon = currentConfig.icon;
 
-  const handleCycleTheme = React.useCallback(() => {
-    setTheme(NEXT_THEME_CYCLE[activeTheme]);
+  const handleToggle = React.useCallback(() => {
+    setTheme(THEME_CYCLE[activeTheme]);
   }, [activeTheme, setTheme]);
 
-  // Static shell skeleton structure matches the final DOM tree exactly
-  if (!isHydrated) {
+  /*
+   * Hydration-safe placeholder.
+   *
+   * Avoid adding or removing attributes like 'disabled' between Server & Client.
+   * Instead, manage visual styling through classes and disable actions with a conditional guard.
+   */
+  if (!mounted) {
     return (
       <Button
         type="button"
         variant="ghost"
         size="icon"
-        className="rounded-full pointer-events-none opacity-50"
-        aria-label="Loading theme theme selection"
-        aria-live="polite"
+        aria-label="Loading theme"
+        aria-disabled="true"
+        tabIndex={-1}
+        className="cursor-default select-none rounded-full"
       >
-        <span className="flex items-center justify-center w-5 h-5">
-          <Laptop className="h-5 w-5" aria-hidden="true" />
-        </span>
+        <Sun className="h-5 w-5" aria-hidden="true" />
       </Button>
     );
   }
@@ -80,16 +106,15 @@ export default function ThemeToggle() {
       type="button"
       variant="ghost"
       size="icon"
-      className="rounded-full cursor-pointer select-none"
-      onClick={handleCycleTheme}
-      aria-label={`Current theme: ${currentConfig.label}. Click to cycle.`}
-      title={`Switch theme (Current: ${currentConfig.label})`}
+      onClick={handleToggle}
+      aria-label={`Switch to ${THEME_CYCLE[activeTheme]} theme`}
+      title={`Current theme: ${currentConfig.label}. Switch to ${THEME_CYCLE[activeTheme]}.`}
+      className="cursor-pointer select-none rounded-full"
     >
       <motion.span
         {...buttonHover}
-        className="flex items-center justify-center h-full w-full"
+        className="flex h-full w-full items-center justify-center"
       >
-        {/* AnimatePresence enables seamless transitions when keys swap */}
         <AnimatePresence mode="wait" initial={false}>
           <motion.span
             key={activeTheme}
@@ -97,15 +122,16 @@ export default function ThemeToggle() {
             initial="hidden"
             animate="visible"
             exit="hidden"
-            className="flex items-center justify-center w-5 h-5"
+            className="flex h-5 w-5 items-center justify-center"
           >
             <DisplayIcon className="h-5 w-5" aria-hidden="true" />
           </motion.span>
         </AnimatePresence>
       </motion.span>
+
       <span className="sr-only">
-        Active theme mode is currently set to {currentConfig.label} (System
-        resolves to: {resolvedTheme})
+        Current theme: {currentConfig.label}. Switch to{" "}
+        {THEME_CYCLE[activeTheme]}.
       </span>
     </Button>
   );

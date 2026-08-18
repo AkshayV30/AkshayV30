@@ -1,0 +1,97 @@
+{
+  "infrastructureAsCode": {
+    "ansible": {
+      "alt": "Ansible",
+      "dark": "/logos/ansible/ansible-dark.svg",
+      "light": "/logos/ansible/ansible-light.svg"
+    },
+    "terraform": {
+      "alt": "Terraform",
+      "dark": "/logos/terraform.svg",
+      "light": "/logos/terraform.svg"
+    }
+  },
+  "containerizationAndOrchestration": {
+    "dockerLogo": {
+      "alt": "Docker Logo",
+      "dark": "/logos/Docker/docker-logo-white.svg",
+      "light": "/logos/Docker/docker-logo-black.svg"
+    },
+    "dockerLogoDeepBlue": {
+      "alt": "Docker Logo Deep Blue",
+      "dark": "/logos/Docker/docker-logo-deep-blue.svg",
+      "light": "/logos/Docker/docker-logo-deep-blue.svg"
+    },
+    "dockerLogoOceanBlue": {
+      "alt": "Docker Logo Ocean Blue",
+      "dark": "/logos/Docker/docker-logo-ocean-blue.svg",
+      "light": "/logos/Docker/docker-logo-ocean-blue.svg"
+    },
+    "dockerMark": {
+      "alt": "Docker Mark",
+      "dark": "/logos/Docker/docker-mark-white.svg",
+      "light": "/logos/Docker/docker-mark-black.svg"
+    },
+    "dockerMarkDeepBlue": {
+      "alt": "Docker Mark Deep Blue",
+      "dark": "/logos/Docker/docker-mark-deep-blue.svg",
+      "light": "/logos/Docker/docker-mark-deep-blue.svg"
+    },
+    "dockerMarkOceanBlue": {
+      "alt": "Docker Mark Ocean Blue",
+      "dark": "/logos/Docker/docker-mark-ocean-blue.svg",
+      "light": "/logos/Docker/docker-mark-ocean-blue.svg"
+    },
+    "kubernetes": {
+      "alt": "Kubernetes",
+      "dark": "/logos/kubernetes.svg",
+      "light": "/logos/kubernetes.svg"
+    },
+    "redHatOpenShift": {
+      "alt": "Red Hat OpenShift",
+      "dark": "/logos/red-hat-openshift/redhatopenshift.svg",
+      "light": "/logos/red-hat-openshift/redhatopenshift-light.svg"
+    }
+  },
+  "ciAndCd": {
+    "apacheMaven": {
+      "alt": "Apache Maven",
+      "dark": "/logos/apache-maven/apachemaven-dark.svg",
+      "light": "/logos/apache-maven/apachemaven-light.svg"
+    },
+    "githubActions": {
+      "alt": "GitHub Actions",
+      "dark": "/logos/github/githubactions-dark.svg",
+      "light": "/logos/github/githubactions-light.svg"
+    },
+    "jenkins": {
+      "alt": "Jenkins",
+      "dark": "/logos/jenkins.svg",
+      "light": "/logos/jenkins.svg"
+    },
+    "tekton": {
+      "alt": "Tekton",
+      "dark": "/logos/tekton/tekton.svg",
+      "light": "/logos/tekton/tekton-light.svg"
+    }
+  },
+  "sourceCodeManagement": {
+    "github": {
+      "alt": "GitHub",
+      "dark": "/logos/github/github-dark.svg",
+      "light": "/logos/github/github-light.svg"
+    }
+  },
+  "monitoring": {
+    "grafana": {
+      "alt": "Grafana",
+      "dark": "/logos/grafana.svg",
+      "light": "/logos/grafana.svg"
+    },
+    "prometheus": {
+      "alt": "Prometheus",
+      "dark": "/logos/prometheus.svg",
+      "light": "/logos/prometheus.svg"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "competitiveProgramming": {
+    "codeChef": {
+      "alt": "CodeChef",
+      "dark": "/logos/challenges/codechef.svg",
+      "light": "/logos/challenges/codechef.svg"
+    },
+    "hackerRank": {
+      "alt": "HackerRank",
+      "dark": "/logos/challenges/hacker-rank/hackerrank-dark.svg",
+      "light": "/logos/challenges/hacker-rank/hackerrank-light.svg"
+    },
+    "leetCode": {
+      "alt": "LeetCode",
+      "dark": "/logos/challenges/leetcode/leetcode-dark.svg",
+      "light": "/logos/challenges/leetcode/leetcode-light.svg"
+    }
+  },
+  "frontendChallenges": {
+    "cssBattle": {
+      "alt": "CSSBattle",
+      "dark": "/logos/challenges/cssBattle.svg",
+      "light": "/logos/challenges/cssBattle.svg"
+    },
+    "frontendMentor": {
+      "alt": "Frontend Mentor",
+      "dark": "/logos/challenges/frontend-mentor/frontendmentor-color.svg",
+      "light": "/logos/challenges/frontend-mentor/frontendmentor-color.svg"
+    }
+  }
+}

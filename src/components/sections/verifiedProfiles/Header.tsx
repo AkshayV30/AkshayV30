@@ -1,46 +1,49 @@
+"use client";
+
 import { BadgeCheck } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
 
-import { verifiedProfileIconVariants } from "@/app/motions";
+import BrandIcon from "@/components/ui/brand-icon";
 
-import { motion } from "framer-motion";
+import type { VerificationProfile } from "@/types/verification";
 
 interface VerifiedProfileHeaderProps {
-  Icon: LucideIcon;
-  eyebrow?: string;
-  name: string;
+  profile: VerificationProfile;
 }
 
 export default function VerifiedProfileHeader({
-  Icon,
-  eyebrow,
-  name,
+  profile,
 }: VerifiedProfileHeaderProps) {
   return (
     <div className="flex items-start gap-4">
-      <motion.div
-        variants={verifiedProfileIconVariants}
+      {/* Transparent branded logo area */}
+      <div
         className={[
-          "relative flex h-11 w-11 shrink-0",
-          "items-center justify-center",
-          "rounded-xl",
-          "border border-primary/15",
-          "bg-primary/8 text-primary",
+          "group/logo relative flex h-11 w-11 shrink-0 items-center justify-center",
+          "transition-transform duration-300",
+          "group-hover/logo:scale-[1.04]",
         ].join(" ")}
       >
-        <Icon className="h-5 w-5" strokeWidth={1.8} aria-hidden="true" />
-      </motion.div>
+        <BrandIcon
+          icon={profile.icon}
+          width={28}
+          height={28}
+          className={[
+            "relative z-10 h-7 w-7",
+            "object-contain",
+            "transition-all duration-300",
+            "group-hover/logo:scale-110",
+          ].join(" ")}
+        />
+      </div>
 
       <div className="min-w-0 flex-1">
-        {eyebrow && (
-          <p className="mb-1 truncate text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-            {eyebrow}
-          </p>
-        )}
+        <p className="mb-1 truncate text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+          {profile.eyebrow}
+        </p>
 
         <div className="flex items-center gap-2">
           <h3 className="min-w-0 truncate text-sm font-semibold tracking-tight sm:text-base">
-            {name}
+            {profile.name}
           </h3>
 
           <BadgeCheck

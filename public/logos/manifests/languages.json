@@ -1,0 +1,47 @@
+{
+  "web": {
+    "javascript": {
+      "alt": "JavaScript",
+      "dark": "/logos/languages/web/js/javascript-dark.svg",
+      "light": "/logos/languages/web/js/javascript-light.svg"
+    },
+    "typescript": {
+      "alt": "TypeScript",
+      "dark": "/logos/languages/web/typescript/typescript.svg",
+      "light": "/logos/languages/web/typescript/typescript.svg"
+    }
+  },
+  "programming": {
+    "python": {
+      "alt": "Python",
+      "dark": "/logos/languages/programming/python/python.svg",
+      "light": "/logos/languages/programming/python/python.svg"
+    },
+    "cplusplus": {
+      "alt": "C++",
+      "dark": "/logos/languages/programming/cplusplus/cplusplus-dark.svg",
+      "light": "/logos/languages/programming/cplusplus/cplusplus.svg"
+    }
+  },
+  "markup": {
+    "html5": {
+      "alt": "HTML5",
+      "dark": "/logos/languages/markup/html-5.svg",
+      "light": "/logos/languages/markup/html-5.svg"
+    }
+  },
+  "styling": {
+    "css3": {
+      "alt": "CSS3",
+      "dark": "/logos/languages/styling/css3.svg",
+      "light": "/logos/languages/styling/css3.svg"
+    }
+  },
+  "shell": {
+    "bash": {
+      "alt": "Bash",
+      "dark": "/logos/languages/shell/bash.svg",
+      "light": "/logos/languages/shell/bash.svg"
+    }
+  }
+}

@@ -1,32 +1,9 @@
-import { Mail } from "lucide-react";
-
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import BrandIcon from "@/components/ui/brand-icon";
 import { Section } from "@/components/ui/section";
-import { GithubIcon, LinkedinIcon } from "@/lib/icons/SocialIcons";
 
-const CONTACT_LINKS = [
-  {
-    label: "Email Me",
-    href: "mailto:akshayatwork.v30@gmail.com",
-    icon: Mail,
-    variant: "default" as const,
-  },
-  {
-    label: "GitHub",
-    href: "https://github.com/AkshayV30",
-    icon: GithubIcon,
-    variant: "outline" as const,
-    external: true,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/minzakshaykumar03/",
-    icon: LinkedinIcon,
-    variant: "outline" as const,
-    external: true,
-  },
-];
+import { CONTACT_LINKS } from "@/data/contacts";
 
 export default function Contact() {
   return (
@@ -45,15 +22,24 @@ export default function Contact() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {CONTACT_LINKS.map(
-              ({ label, href, icon: Icon, variant, external }) => (
+              ({ label, href, icon: Icon, logo, variant, external }) => (
                 <a
                   key={label}
                   href={href}
                   target={external ? "_blank" : undefined}
                   rel={external ? "noopener noreferrer" : undefined}
-                  className={`${buttonVariants({ variant })} gap-2 flex`}
+                  className={`${buttonVariants({ variant })} gap-2 items-center flex`}
                 >
-                  <Icon className="h-4 w-4" aria-hidden="true" />
+                  {logo ? (
+                    <BrandIcon
+                      icon={logo}
+                      width={16}
+                      height={16}
+                      className="h-4 w-4 object-contain"
+                    />
+                  ) : Icon ? (
+                    <Icon className="h-4 w-4" aria-hidden="true" />
+                  ) : null}
                   <span>{label}</span>
                 </a>
               ),

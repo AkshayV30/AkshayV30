@@ -1,0 +1,33 @@
+{
+  "fullStack": {
+    "nextjs": {
+      "alt": "nextjs",
+      "dark": "/logos/web-framework/next-js/nextjs.svg",
+      "light": "/logos/web-framework/next-js/nextjs-light.svg"
+    }
+  },
+  "frontend": {
+    "react": {
+      "alt": "react",
+      "dark": "/logos/web-framework/react/react-dark.svg",
+      "light": "/logos/web-framework/react/react-light.svg"
+    },
+    "angular": {
+      "alt": "angular",
+      "dark": "/logos/web-framework/angular.svg",
+      "light": "/logos/web-framework/angular.svg"
+    }
+  },
+  "styling": {
+    "tailwindCss": {
+      "alt": "Tailwind CSS",
+      "dark": "/logos/web-framework/styling/tailwind-css.svg",
+      "light": "/logos/web-framework/styling/tailwind-css.svg"
+    },
+    "sass": {
+      "alt": "Sass",
+      "dark": "/logos/web-framework/styling/sass.svg",
+      "light": "/logos/web-framework/styling/sass.svg"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "relationalDatabases": {
+    "mySql": {
+      "alt": "MySQL",
+      "dark": "/logos/dbs/my-sql/mysql-dark.svg",
+      "light": "/logos/dbs/my-sql/mysql-light.svg"
+    },
+    "postgreSql": {
+      "alt": "PostgreSQL",
+      "dark": "/logos/dbs/postgres.svg",
+      "light": "/logos/dbs/postgres.svg"
+    }
+  },
+  "documentDatabases": {
+    "mongoDb": {
+      "alt": "MongoDB",
+      "dark": "/logos/dbs/mongo-db/mongodb.svg",
+      "light": "/logos/dbs/mongo-db/mongodb.svg"
+    }
+  },
+  "inMemoryDatabases": {
+    "redis": {
+      "alt": "Redis",
+      "dark": "/logos/dbs/redis.svg",
+      "light": "/logos/dbs/redis.svg"
+    }
+  }
+}

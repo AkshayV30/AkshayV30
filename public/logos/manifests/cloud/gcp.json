@@ -1,0 +1,252 @@
+{
+  "aIHypercomputer512": {
+    "alt": "AIHypercomputer 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/AI Hypercomputer/PNG/AIHypercomputer-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/AI Hypercomputer/PNG/AIHypercomputer-512-color.png"
+  },
+  "aIMachineLearning512": {
+    "alt": "AIMachineLearning 512",
+    "dark": "/logos/clouds/gcp/category-icons/AI _ Machine Learning/PNG/AIMachineLearning-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/AI _ Machine Learning/PNG/AIMachineLearning-512-color.png"
+  },
+  "agents512": {
+    "alt": "Agents 512",
+    "dark": "/logos/clouds/gcp/category-icons/Agents/PNG/Agents-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Agents/PNG/Agents-512-color.png"
+  },
+  "alloyDB512": {
+    "alt": "AlloyDB 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/AlloyDB/PNG/AlloyDB-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/AlloyDB/PNG/AlloyDB-512-color.png"
+  },
+  "anthos512": {
+    "alt": "Anthos 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Anthos/PNG/Anthos-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Anthos/PNG/Anthos-512-color.png"
+  },
+  "apigee512": {
+    "alt": "Apigee 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Apigee/PNG/Apigee-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Apigee/PNG/Apigee-512-color.png"
+  },
+  "apigee512ColorRgb": {
+    "alt": "Apigee 512 color rgb",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Apigee/SVG/Apigee-512-color-rgb.svg",
+    "light": "/logos/clouds/gcp/core-prod-icons/Apigee/SVG/Apigee-512-color-rgb.svg"
+  },
+  "bigQuery512": {
+    "alt": "BigQuery 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/BigQuery/PNG/BigQuery-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/BigQuery/PNG/BigQuery-512-color.png"
+  },
+  "businessIntelligence512": {
+    "alt": "BusinessIntelligence 512",
+    "dark": "/logos/clouds/gcp/category-icons/Business Intelligence/PNG/BusinessIntelligence-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Business Intelligence/PNG/BusinessIntelligence-512-color.png"
+  },
+  "cloudRun512ColorRgb": {
+    "alt": "CloudRun 512 color rgb",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Cloud Run/PNG/CloudRun-512-color-rgb.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Cloud Run/PNG/CloudRun-512-color-rgb.png"
+  },
+  "cloudSQL512": {
+    "alt": "CloudSQL 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Cloud SQL/PNG/CloudSQL-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Cloud SQL/PNG/CloudSQL-512-color.png"
+  },
+  "cloudSpanner512": {
+    "alt": "CloudSpanner 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Cloud Spanner/PNG/CloudSpanner-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Cloud Spanner/PNG/CloudSpanner-512-color.png"
+  },
+  "cloudStorage512": {
+    "alt": "Cloud Storage 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Cloud Storage/PNG/Cloud_Storage-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Cloud Storage/PNG/Cloud_Storage-512-color.png"
+  },
+  "collaboration512": {
+    "alt": "Collaboration 512",
+    "dark": "/logos/clouds/gcp/category-icons/Collaboration/PNG/Collaboration-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Collaboration/PNG/Collaboration-512-color.png"
+  },
+  "compute512": {
+    "alt": "Compute 512",
+    "dark": "/logos/clouds/gcp/category-icons/Compute/PNG/Compute-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Compute/PNG/Compute-512-color.png"
+  },
+  "computeEngine512": {
+    "alt": "ComputeEngine 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Compute Engine/PNG/ComputeEngine-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Compute Engine/PNG/ComputeEngine-512-color.png"
+  },
+  "computeEngine512ColorRgb": {
+    "alt": "ComputeEngine 512 color rgb",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Compute Engine/SVG/ComputeEngine-512-color-rgb.svg",
+    "light": "/logos/clouds/gcp/core-prod-icons/Compute Engine/SVG/ComputeEngine-512-color-rgb.svg"
+  },
+  "containers512": {
+    "alt": "Containers 512",
+    "dark": "/logos/clouds/gcp/category-icons/Containers/PNG/Containers-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Containers/PNG/Containers-512-color.png"
+  },
+  "dataAnalytics512": {
+    "alt": "DataAnalytics 512",
+    "dark": "/logos/clouds/gcp/category-icons/Data Analytics/PNG/DataAnalytics-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Data Analytics/PNG/DataAnalytics-512-color.png"
+  },
+  "databases512": {
+    "alt": "Databases 512",
+    "dark": "/logos/clouds/gcp/category-icons/Databases/PNG/Databases-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Databases/PNG/Databases-512-color.png"
+  },
+  "devOps512": {
+    "alt": "DevOps 512",
+    "dark": "/logos/clouds/gcp/category-icons/DevOps/PNG/DevOps-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/DevOps/PNG/DevOps-512-color.png"
+  },
+  "developerTools512": {
+    "alt": "Developer Tools 512",
+    "dark": "/logos/clouds/gcp/category-icons/Developer Tools/PNG/Developer_Tools-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Developer Tools/PNG/Developer_Tools-512-color.png"
+  },
+  "distributedCloud512": {
+    "alt": "DistributedCloud 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Distributed Cloud/PNG/DistributedCloud-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Distributed Cloud/PNG/DistributedCloud-512-color.png"
+  },
+  "gKE512": {
+    "alt": "GKE 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/GKE/PNG/GKE-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/GKE/PNG/GKE-512-color.png"
+  },
+  "gmail": {
+    "alt": "gmail",
+    "dark": "/logos/clouds/gcp/gmail.svg",
+    "light": "/logos/clouds/gcp/gmail.svg"
+  },
+  "googleCloud": {
+    "alt": "Google Cloud",
+    "dark": "/logos/clouds/gcp/gcp.svg",
+    "light": "/logos/clouds/gcp/gcp.svg"
+  },
+  "hybridMulticloud512": {
+    "alt": "HybridMulticloud 512",
+    "dark": "/logos/clouds/gcp/category-icons/Hybrid & Multicloud/PNG/HybridMulticloud-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Hybrid & Multicloud/PNG/HybridMulticloud-512-color.png"
+  },
+  "hyperdisk512": {
+    "alt": "Hyperdisk 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Hyperdisk/PNG/Hyperdisk-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Hyperdisk/PNG/Hyperdisk-512-color.png"
+  },
+  "integrationServices512": {
+    "alt": "IntegrationServices 512",
+    "dark": "/logos/clouds/gcp/category-icons/Integration Services/PNG/IntegrationServices-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Integration Services/PNG/IntegrationServices-512-color.png"
+  },
+  "looker512": {
+    "alt": "Looker 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Looker/PNG/Looker-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Looker/PNG/Looker-512-color.png"
+  },
+  "managementTools512": {
+    "alt": "ManagementTools 512",
+    "dark": "/logos/clouds/gcp/category-icons/Management Tools/PNG/ManagementTools-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Management Tools/PNG/ManagementTools-512-color.png"
+  },
+  "mandiant512": {
+    "alt": "Mandiant 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Mandiant/PNG/Mandiant-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Mandiant/PNG/Mandiant-512-color.png"
+  },
+  "mapsGeospatial512": {
+    "alt": "MapsGeospatial 512",
+    "dark": "/logos/clouds/gcp/category-icons/Maps & Geospatial/PNG/MapsGeospatial-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Maps & Geospatial/PNG/MapsGeospatial-512-color.png"
+  },
+  "marketplace512": {
+    "alt": "Marketplace 512",
+    "dark": "/logos/clouds/gcp/category-icons/Marketplace/PNG/Marketplace-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Marketplace/PNG/Marketplace-512-color.png"
+  },
+  "mediaServices512": {
+    "alt": "MediaServices 512",
+    "dark": "/logos/clouds/gcp/category-icons/Media Services/PNG/MediaServices-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Media Services/PNG/MediaServices-512-color.png"
+  },
+  "migration512": {
+    "alt": "Migration 512",
+    "dark": "/logos/clouds/gcp/category-icons/Migration/PNG/Migration-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Migration/PNG/Migration-512-color.png"
+  },
+  "mixedReality512": {
+    "alt": "MixedReality 512",
+    "dark": "/logos/clouds/gcp/category-icons/Mixed Reality/PNG/MixedReality-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Mixed Reality/PNG/MixedReality-512-color.png"
+  },
+  "networking512": {
+    "alt": "Networking 512",
+    "dark": "/logos/clouds/gcp/category-icons/Networking/PNG/Networking-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Networking/PNG/Networking-512-color.png"
+  },
+  "networking512ColorRgb": {
+    "alt": "Networking 512 color rgb",
+    "dark": "/logos/clouds/gcp/category-icons/Networking/SVG/Networking-512-color-rgb.svg",
+    "light": "/logos/clouds/gcp/category-icons/Networking/SVG/Networking-512-color-rgb.svg"
+  },
+  "observability512": {
+    "alt": "Observability 512",
+    "dark": "/logos/clouds/gcp/category-icons/Observability/PNG/Observability-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Observability/PNG/Observability-512-color.png"
+  },
+  "operations512": {
+    "alt": "Operations 512",
+    "dark": "/logos/clouds/gcp/category-icons/Operations/PNG/Operations-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Operations/PNG/Operations-512-color.png"
+  },
+  "secOps512ColorRgb": {
+    "alt": "SecOps 512 color rgb",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Security Operations/PNG/SecOps-512-color-rgb.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Security Operations/PNG/SecOps-512-color-rgb.png"
+  },
+  "securityCommandCenter512": {
+    "alt": "SecurityCommandCenter 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Security Command Center/PNG/SecurityCommandCenter-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Security Command Center/PNG/SecurityCommandCenter-512-color.png"
+  },
+  "securityIdentity512": {
+    "alt": "SecurityIdentity 512",
+    "dark": "/logos/clouds/gcp/category-icons/Security Identity/PNG/SecurityIdentity-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Security Identity/PNG/SecurityIdentity-512-color.png"
+  },
+  "serverlessComputing512": {
+    "alt": "ServerlessComputing 512",
+    "dark": "/logos/clouds/gcp/category-icons/Serverless Computing/PNG/ServerlessComputing-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Serverless Computing/PNG/ServerlessComputing-512-color.png"
+  },
+  "storage512": {
+    "alt": "Storage 512",
+    "dark": "/logos/clouds/gcp/category-icons/Storage/PNG/Storage-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Storage/PNG/Storage-512-color.png"
+  },
+  "threatIntelligence512": {
+    "alt": "ThreatIntelligence 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Threat Intelligence/PNG/ThreatIntelligence-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Threat Intelligence/PNG/ThreatIntelligence-512-color.png"
+  },
+  "vertexAI512": {
+    "alt": "VertexAI 512",
+    "dark": "/logos/clouds/gcp/core-prod-icons/Vertex AI/PNG/VertexAI-512-color.png",
+    "light": "/logos/clouds/gcp/core-prod-icons/Vertex AI/PNG/VertexAI-512-color.png"
+  },
+  "web3512": {
+    "alt": "Web3 512",
+    "dark": "/logos/clouds/gcp/category-icons/Web3/PNG/Web3-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Web3/PNG/Web3-512-color.png"
+  },
+  "webMobile512": {
+    "alt": "WebMobile 512",
+    "dark": "/logos/clouds/gcp/category-icons/Web & Mobile/PNG/WebMobile-512-color.png",
+    "light": "/logos/clouds/gcp/category-icons/Web & Mobile/PNG/WebMobile-512-color.png"
+  }
+}

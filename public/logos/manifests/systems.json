@@ -1,0 +1,31 @@
+{
+  "operatingSystems": {
+    "fedora": {
+      "alt": "Fedora",
+      "dark": "/logos/systems/os/fedora/fedora.svg",
+      "light": "/logos/systems/os/fedora/fedora.svg"
+    },
+    "linux": {
+      "alt": "Linux",
+      "dark": "/logos/systems/os/linux/linux.svg",
+      "light": "/logos/systems/os/linux/linux.svg"
+    },
+    "ubuntu": {
+      "alt": "Ubuntu",
+      "dark": "/logos/systems/os/ubuntu/ubuntu.svg",
+      "light": "/logos/systems/os/ubuntu/ubuntu.svg"
+    }
+  },
+  "servers": {
+    "apacheTomcat": {
+      "alt": "Apache Tomcat",
+      "dark": "/logos/systems/servers/apache_tomcat.svg",
+      "light": "/logos/systems/servers/apache_tomcat.svg"
+    },
+    "nginx": {
+      "alt": "NGINX",
+      "dark": "/logos/systems/servers/nginx.svg",
+      "light": "/logos/systems/servers/nginx.svg"
+    }
+  }
+}

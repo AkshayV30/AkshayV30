@@ -1,0 +1,17 @@
+{
+  "challenges": "/logos/manifests/challenges.json",
+  "cloud": {
+    "aws": "/logos/manifests/cloud/aws.json",
+    "gcp": "/logos/manifests/cloud/gcp.json",
+    "ibm": "/logos/manifests/cloud/ibm.json"
+  },
+  "systems": "./logos/manifests/systems.json",
+  "credentials": "/logos/manifests/credentials.json",
+  "databases": "/logos/manifests/databases.json",
+  "framework": "/logos/manifests/framework.json",
+  "devops": "/logos/manifests/devops.json",
+  "general": "/logos/manifests/general.json",
+  "languages": "/logos/manifests/languages.json",
+  "social": "/logos/manifests/social.json",
+  "backends": "/logos/manifests/backends.json"
+}

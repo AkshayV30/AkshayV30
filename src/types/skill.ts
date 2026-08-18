@@ -1,10 +1,12 @@
+import { LogoKey } from "./logo";
+
 export interface Skill {
   name: string;
-  icon?: string;
+  logo?: LogoKey;
 }
 
 export interface SkillGroup {
   category: string;
-  description?: string;
-  skills: Skill[];
+  description: string;
+  skills: readonly Skill[];
 }

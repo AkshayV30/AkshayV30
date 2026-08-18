@@ -4,22 +4,10 @@ import Link from "next/link";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 
-import { Button } from "@/components/ui/button";
 import { Typewriter } from "@/components/effects/Typewriter";
-import { GithubIcon, LinkedinIcon } from "@/lib/icons/SocialIcons";
+import { Button } from "@/components/ui/button";
 
-const socialLinks = [
-  {
-    label: "GitHub",
-    href: "https://github.com/AkshayV30",
-    icon: GithubIcon,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/",
-    icon: LinkedinIcon,
-  },
-];
+import { HERO_ROLES } from "@/data/hero";
 
 export default function Hero() {
   const shouldReduceMotion = useReducedMotion();
@@ -48,14 +36,7 @@ export default function Hero() {
 
           {/* Animated Role */}
           <div className="mt-5 min-h-[2.25rem] sm:min-h-[2.75rem]">
-            <Typewriter
-              roles={[
-                "DevOps & Cloud Engineer",
-                "Backend Engineer",
-                "Cloud-Native Engineer",
-                "DevOps Automation Engineer",
-              ]}
-            />
+            <Typewriter roles={HERO_ROLES} />
           </div>
 
           {/* Description */}
@@ -69,57 +50,20 @@ export default function Hero() {
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <Button
               size="lg"
-              className="rounded-xl px-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+              className="flex items-center cursor-pointer rounded-xl px-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
             >
-              <Link href="#projects" className="flex">
-                View Projects
-                <ArrowDown className="ml-2 h-4 w-4" />
-              </Link>
+              <Link href="#projects">View Projects</Link>
+              <ArrowDown className="ml-2 h-4 w-4" aria-hidden="true" />
             </Button>
 
             <Button
               variant="outline"
               size="lg"
-              className="rounded-xl px-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5"
+              className="flex items-center cursor-pointer rounded-xl px-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5"
             >
-              <Link href="#contact" className="flex">
-                Get In Touch
-                <ArrowUpRight className="ml-2 h-4 w-4" />
-              </Link>
+              <Link href="#contact">Get In Touch</Link>
+              <ArrowUpRight className="ml-2 h-4 w-4" aria-hidden="true" />
             </Button>
-
-            {/* Social Links */}
-            <div className="ml-1 flex items-center gap-2 border-l border-border/60 pl-4">
-              {socialLinks.map(({ label, href, icon: Icon }) => (
-                <Button
-                  key={label}
-                  variant="outline"
-                  size="icon"
-                  className={[
-                    "h-11 w-11 rounded-full",
-                    "border-border/70 bg-background",
-                    "text-muted-foreground",
-                    "shadow-sm",
-                    "transition-all duration-200",
-                    "hover:-translate-y-0.5",
-                    "hover:border-foreground/30",
-                    "hover:bg-foreground",
-                    "hover:text-background",
-                    "hover:shadow-md",
-                  ].join(" ")}
-                >
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    title={label}
-                  >
-                    <Icon className="h-5 w-5" aria-hidden="true" />
-                  </a>
-                </Button>
-              ))}
-            </div>
           </div>
         </motion.div>
       </div>
