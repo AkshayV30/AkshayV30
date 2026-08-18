@@ -13,6 +13,16 @@ interface BrandIconProps extends Omit<
   icon: BrandLogo;
 }
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function resolveAssetPath(path: string): string {
+  if (!path.startsWith("/")) {
+    return path;
+  }
+
+  return `${BASE_PATH}${path}`;
+}
+
 export default function BrandIcon({
   icon,
   className,
@@ -28,14 +38,12 @@ export default function BrandIcon({
     () => false,
   );
 
-  // Server + initial client render must produce identical markup.
-  // Use light until the theme is known on the client.
-  const src = isHydrated && resolvedTheme === "dark" ? icon.dark : icon.light;
+  const logo = isHydrated && resolvedTheme === "dark" ? icon.dark : icon.light;
 
   return (
     <Image
       {...props}
-      src={src}
+      src={resolveAssetPath(logo)}
       alt={icon.alt}
       width={width}
       height={height}

@@ -1,15 +1,14 @@
 import type { NextConfig } from "next";
 
 const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+const GITHUB_PAGES_BASE_PATH = "/AkshayV30";
 
 const nextConfig: NextConfig = {
   output: "export",
 
-  // GitHub Pages project-site URL:
-  // https://akshayv30.github.io/AkshayV30/
   ...(isGitHubPages && {
-    basePath: "/AkshayV30",
-    assetPrefix: "/AkshayV30/",
+    basePath: GITHUB_PAGES_BASE_PATH,
+    assetPrefix: `${GITHUB_PAGES_BASE_PATH}/`,
   }),
 
   trailingSlash: true,
