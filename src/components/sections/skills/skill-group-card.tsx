@@ -66,7 +66,7 @@ export function SkillGroupCard({
         >
           <span
             className={[
-              "flex h-11 w-11 shrink-0 items-center justify-center",
+              "flex  h-11 w-11 shrink-0 items-center justify-center",
               "rounded-xl border",
               "transition-all duration-300",
               isOpen
@@ -80,7 +80,7 @@ export function SkillGroupCard({
             <Layers3 className="h-5 w-5" aria-hidden="true" />
           </span>
 
-          <span className="min-w-0 flex-1">
+          <span className="min-w-0 flex-1 cursor-pointer">
             <span className="block text-base font-semibold tracking-tight">
               {group.category}
             </span>

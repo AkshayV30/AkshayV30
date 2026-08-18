@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 
 import type { BrandLogo } from "@/types/logo";
+import { resolveAssetPath } from "@/app/configs/assets.config";
 
 interface BrandIconProps extends Omit<
   React.ComponentProps<typeof Image>,
@@ -13,14 +14,14 @@ interface BrandIconProps extends Omit<
   icon: BrandLogo;
 }
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const EMPTY_SUBSCRIBE = () => () => {};
 
-function resolveAssetPath(path: string): string {
-  if (!path.startsWith("/")) {
-    return path;
-  }
-
-  return `${BASE_PATH}${path}`;
+function useIsHydrated(): boolean {
+  return React.useSyncExternalStore(
+    EMPTY_SUBSCRIBE,
+    () => true,
+    () => false,
+  );
 }
 
 export default function BrandIcon({
@@ -31,12 +32,7 @@ export default function BrandIcon({
   ...props
 }: BrandIconProps) {
   const { resolvedTheme } = useTheme();
-
-  const isHydrated = React.useSyncExternalStore(
-    React.useCallback(() => () => {}, []),
-    () => true,
-    () => false,
-  );
+  const isHydrated = useIsHydrated();
 
   const logo = isHydrated && resolvedTheme === "dark" ? icon.dark : icon.light;
 
