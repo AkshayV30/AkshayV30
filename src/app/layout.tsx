@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Noto_Sans, Playfair_Display } from "next/font/google";
 
-import { cn } from "@/lib/utils";
 import { geistMono, geistSans } from "./configs/fonts.config";
 import { siteMetadata, siteViewport } from "./configs/metadata.config";
 
+import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import GoogleAnalytics from "@/lib/analytics/googleAnalytics";
 
 import "./globals.css";
 
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <body className="min-h-screen bg-background font-sans text-foreground">
+        <GoogleAnalytics />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

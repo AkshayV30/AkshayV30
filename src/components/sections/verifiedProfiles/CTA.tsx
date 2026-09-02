@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { trackVerifiedProfileClick } from "@/lib/analytics/analytics";
 
 interface VerifiedProfileCTAProps {
   name: string;
@@ -32,6 +33,7 @@ export default function VerifiedProfileCTA({
             rel="noopener noreferrer"
             className="flex gap-3 items-center"
             aria-label={`View ${name} profile`}
+            onClick={() => trackVerifiedProfileClick(name)}
           >
             <span>View {name}</span>
 

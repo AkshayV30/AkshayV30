@@ -8,6 +8,7 @@ import { Typewriter } from "@/components/effects/Typewriter";
 import { Button } from "@/components/ui/button";
 
 import { HERO_ROLES } from "@/data/hero";
+import { trackButtonClick } from "@/lib/analytics/analytics";
 
 export default function Hero() {
   const shouldReduceMotion = useReducedMotion();
@@ -49,6 +50,7 @@ export default function Hero() {
           {/* Actions */}
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <Button
+              onClick={() => trackButtonClick("View Projects", "hero")}
               size="lg"
               className="flex items-center cursor-pointer rounded-xl px-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
             >
@@ -57,6 +59,7 @@ export default function Hero() {
             </Button>
 
             <Button
+              onClick={() => trackButtonClick("Get in touch", "hero")}
               variant="outline"
               size="lg"
               className="flex items-center cursor-pointer rounded-xl px-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5"

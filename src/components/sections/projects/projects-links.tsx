@@ -6,6 +6,10 @@ import BrandIcon from "@/components/ui/brand-icon";
 import { LOGOS } from "@/lib/logos";
 
 import { getGithubRepoName, isLongRepoName } from "./projects-utils";
+import {
+  trackProjectDemoClick,
+  trackProjectGithubClick,
+} from "@/lib/analytics/analytics";
 
 interface ProjectLinksProps {
   title: string;
@@ -67,6 +71,7 @@ function GithubLink({
   return (
     <Link
       href={github}
+      onClick={() => trackProjectGithubClick(title)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`View ${title} source code on GitHub`}
@@ -123,6 +128,7 @@ function LiveDemoLink({
 }) {
   return (
     <Link
+      onClick={() => trackProjectDemoClick(title)}
       href={liveLink}
       target="_blank"
       rel="noopener noreferrer"
