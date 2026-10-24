@@ -6,7 +6,7 @@ interface ProjectStackProps {
 
 export function ProjectStack({ technologies }: ProjectStackProps) {
   return (
-    <div className="mt-auto pt-8">
+    <div className="pt-4">
       <div className="border-t border-border/60 pt-4">
         <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
           Technology Stack

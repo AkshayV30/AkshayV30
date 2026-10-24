@@ -44,8 +44,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <body className="min-h-screen bg-background font-sans text-foreground">
-        <GoogleAnalytics />
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <GoogleAnalytics />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
