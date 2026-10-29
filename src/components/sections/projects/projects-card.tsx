@@ -1,4 +1,7 @@
-import { motion } from "framer-motion";
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   BrainCircuit,
   Building2,
@@ -9,12 +12,19 @@ import {
   Eye,
   ListTodo,
   Workflow,
+  ChevronDown,
   type LucideIcon,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { projectCardHover, projectCardVariants } from "@/app/motions";
+
+import {
+  projectCardHover,
+  projectCardVariants,
+  getSlideVariants,
+} from "@/app/motions";
 import { ProjectStack } from "./projects-stack";
 import { ProjectLinks } from "./projects-links";
 import "./projects-style.css";
@@ -38,6 +48,7 @@ const PROJECT_ICONS: Record<ProjectIcon, LucideIcon> = {
 };
 
 export function ProjectCard({ project, shouldReduceMotion }: ProjectCardProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
   const Icon = project.icon ? PROJECT_ICONS[project.icon] : Code2;
 
   return (
@@ -55,7 +66,6 @@ export function ProjectCard({ project, shouldReduceMotion }: ProjectCardProps) {
           "dark/80",
         ].join(" ")}
       >
-        {/* Animated perimeter glow */}
         {!shouldReduceMotion && (
           <div
             aria-hidden="true"
@@ -63,11 +73,9 @@ export function ProjectCard({ project, shouldReduceMotion }: ProjectCardProps) {
           />
         )}
 
-        {/* Inner surface keeps the content above the glow */}
         <div className="pointer-events-none absolute inset-px z-0 rounded-[calc(1rem-1px)] bg-card dark:bg-card/95" />
 
         <CardContent className="relative z-10 flex flex-1 flex-col p-6">
-          {/* Icon and category */}
           <div className="mb-5 flex items-center justify-between gap-3">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-primary/20 bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-105">
               <Icon size={23} strokeWidth={1.8} aria-hidden="true" />
@@ -83,55 +91,83 @@ export function ProjectCard({ project, shouldReduceMotion }: ProjectCardProps) {
             )}
           </div>
 
-          {/* Project title */}
           <h3 className="text-lg font-semibold leading-snug tracking-tight text-foreground sm:text-xl">
             {project.title}
           </h3>
 
-          {/* Description */}
           <p className="mt-3 text-sm leading-6 text-muted-foreground">
             {project.description}
           </p>
 
-          {/* Key highlights */}
           {project.highlights && project.highlights.length > 0 && (
-            <div className="mt-5">
-              <div className="mb-3 flex items-center gap-2">
-                <span
-                  aria-hidden="true"
-                  className="h-4 w-1 rounded-full bg-primary"
+            <div className="mt-4">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="group/btn flex w-full items-center justify-between p-0 text-left text-xs font-semibold uppercase tracking-[0.12em] text-foreground hover:bg-transparent"
+              >
+                <div className="flex items-center gap-2">
+                  <span
+                    aria-hidden="true"
+                    className="h-4 w-1 rounded-full bg-primary"
+                  />
+                  <span>Key Highlights</span>
+                </div>
+                <ChevronDown
+                  size={14}
+                  className={[
+                    "text-muted-foreground transition-transform duration-300 ease-in-out",
+                    shouldReduceMotion
+                      ? ""
+                      : isExpanded
+                        ? "rotate-180 text-primary"
+                        : "group-hover/btn:translate-y-0.5",
+                  ].join(" ")}
+                  style={
+                    shouldReduceMotion && isExpanded
+                      ? { transform: "rotate(180deg)" }
+                      : undefined
+                  }
                 />
-                <h4 className="text-xs font-semibold uppercase tracking-[0.12em] text-foreground">
-                  Key Highlights
-                </h4>
-              </div>
+              </Button>
 
-              <ul className="space-y-2.5">
-                {project.highlights.map((highlight) => (
-                  <li
-                    key={highlight}
-                    className="flex items-start gap-2.5 text-sm leading-5 text-muted-foreground"
+              <AnimatePresence initial={false}>
+                {isExpanded && (
+                  <motion.div
+                    initial="collapsed"
+                    animate="expanded"
+                    exit="collapsed"
+                    variants={getSlideVariants(shouldReduceMotion)}
+                    className="overflow-hidden"
                   >
-                    <CheckCircle2
-                      size={16}
-                      strokeWidth={1.8}
-                      aria-hidden="true"
-                      className="mt-0.5 shrink-0 text-primary/80"
-                    />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
+                    <ul className="space-y-2.5 pt-4">
+                      {project.highlights.map((highlight) => (
+                        <li
+                          key={highlight}
+                          className="flex items-start gap-2.5 text-sm leading-5 text-muted-foreground"
+                        >
+                          <CheckCircle2
+                            size={16}
+                            strokeWidth={1.8}
+                            aria-hidden="true"
+                            className="mt-0.5 shrink-0 text-primary/80"
+                          />
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           )}
 
-          {/* Technology stack */}
           <div className="mt-auto pt-6">
             <ProjectStack technologies={project.technologies} />
           </div>
         </CardContent>
 
-        {/* Existing GitHub and demo links */}
         <div className="relative z-10">
           <ProjectLinks
             title={project.title}

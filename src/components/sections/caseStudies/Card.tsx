@@ -1,7 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, ChevronDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -18,6 +19,8 @@ interface CaseStudyCardProps {
 }
 
 export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <motion.div whileHover={caseStudyCardHover} className="h-full">
       <Card
@@ -47,31 +50,80 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
         <CardContent className="flex h-full flex-col p-6">
           <CaseStudyHeader caseStudy={caseStudy} />
 
-          <div className="mt-6 space-y-5">
+          {/* Primary View: Always Visible */}
+          <div className="mt-6">
             <CaseStudySection label="Problem">
               {caseStudy.problem}
             </CaseStudySection>
-
-            <CaseStudySection label="Approach">
-              <div className="space-y-3">
-                {caseStudy.approach.map((paragraph, index) => (
-                  <p
-                    key={index}
-                    className="text-sm leading-relaxed text-muted-foreground"
-                  >
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </CaseStudySection>
-
-            <CaseStudySection label="Outcome">
-              {caseStudy.outcome}
-            </CaseStudySection>
           </div>
 
-          <div className="mt-auto pt-6">
-            <div className="border-t border-border/50 pt-5">
+          {/* Collapsible Section: Slides smoothly open and closed */}
+          <AnimatePresence initial={false}>
+            {isExpanded && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{
+                  height: "auto",
+                  opacity: 1,
+                  transition: {
+                    height: { duration: 0.3, ease: "easeOut" },
+                    opacity: { duration: 0.2, delay: 0.05 },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: { duration: 0.25, ease: "easeIn" },
+                    opacity: { duration: 0.15 },
+                  },
+                }}
+                className="overflow-hidden"
+              >
+                <div className="mt-5 space-y-5 pt-1">
+                  <CaseStudySection label="Approach">
+                    <div className="space-y-3">
+                      {caseStudy.approach.map((paragraph, index) => (
+                        <p
+                          key={index}
+                          className="text-sm leading-relaxed text-muted-foreground"
+                        >
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </CaseStudySection>
+
+                  <CaseStudySection label="Outcome">
+                    {caseStudy.outcome}
+                  </CaseStudySection>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Controls & Footer Area */}
+          <div className="mt-auto pt-4">
+            {/* Interactive Slide Button */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="group/btn mb-2 flex w-full items-center justify-between px-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:bg-transparent hover:text-primary"
+            >
+              <span>{isExpanded ? "Show Less" : "Read Full Case Study"}</span>
+              <ChevronDown
+                size={14}
+                className={[
+                  "transition-transform duration-300 ease-in-out",
+                  isExpanded
+                    ? "rotate-180 text-primary"
+                    : "group-hover/btn:translate-y-0.5",
+                ].join(" ")}
+              />
+            </Button>
+
+            <div className="border-t border-border/50 pt-4">
               <CaseStudyTechnologies technologies={caseStudy.technologies} />
 
               {caseStudy.github && (
@@ -79,7 +131,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
                   size="sm"
                   variant="outline"
                   className={[
-                    "mt-5 w-full rounded-xl",
+                    "mt-4 w-full rounded-xl",
                     "border-border/60",
                     "transition-all duration-200",
                     "hover:border-primary/25",
@@ -91,12 +143,9 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`View ${caseStudy.title} project on GitHub`}
-                    className="flex items-center gap-4"
+                    className="flex items-center justify-center gap-2"
                   >
-                    <ExternalLink
-                      className="mr-2 h-3.5 w-3.5"
-                      aria-hidden="true"
-                    />
+                    <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
                     View project
                   </a>
                 </Button>
