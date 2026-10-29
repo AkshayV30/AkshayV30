@@ -5,7 +5,7 @@ node_modules/
 .next/
 out/
 
-# Production
+# Production output
 build/
 dist/
 
@@ -16,12 +16,11 @@ yarn-error.log*
 pnpm-debug.log*
 *.log
 
-# Environment Variables
+# Environment variables and local secrets
 .env
-.env.local
-.env.development.local
-.env.production.local
-.env.test.local
+.env.*
+!.env.example
+!.env.*.example
 
 # TypeScript
 *.tsbuildinfo
@@ -33,19 +32,16 @@ coverage/
 .vscode/
 .idea/
 
-# Operating System
+# Operating system
 .DS_Store
 Thumbs.db
 
-# Temporary Files
+# Temporary files and caches
 *.tmp
 *.temp
 .cache/
+.turbo/
+.eslintcache
 
 # Vercel
 .vercel/
-
-
-.turbo/
-
-.eslintcache
