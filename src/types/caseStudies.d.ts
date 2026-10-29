@@ -6,7 +6,7 @@ export interface CaseStudy {
   category: string;
 
   problem: string;
-  approach: string;
+  approach: string[];
   outcome: string;
 
   technologies: string[];

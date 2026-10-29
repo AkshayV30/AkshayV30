@@ -53,7 +53,16 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
             </CaseStudySection>
 
             <CaseStudySection label="Approach">
-              {caseStudy.approach}
+              <div className="space-y-3">
+                {caseStudy.approach.map((paragraph, index) => (
+                  <p
+                    key={index}
+                    className="text-sm leading-relaxed text-muted-foreground"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </CaseStudySection>
 
             <CaseStudySection label="Outcome">
