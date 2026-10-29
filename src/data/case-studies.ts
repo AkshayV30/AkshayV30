@@ -111,19 +111,19 @@ export const CASE_STUDIES: CaseStudy[] = [
 
   {
     id: "aws-node-deployment",
-    title: "AWS Node.js Application Deployment",
-    category: "Cloud / Infrastructure",
+    title: "AWS Node.js Service on ECS Fargate",
+    category: "Cloud / DevOps",
 
     problem:
-      "Application deployment needs reproducible infrastructure and configuration that can be maintained independently of application code.",
+      "A minimal Node.js demo is easy to run locally, but a credible cloud deployment example also needs repeatable infrastructure, observable health, safe container defaults, and a dependable release path.",
 
     approach:
-      "Deployed a Node.js application using AWS EC2, RDS, and S3, with Terraform and Ansible for infrastructure provisioning and configuration automation.",
+      "Structured the Express service with liveness/readiness endpoints, a versioned service-info API, request IDs, structured logs, security headers, bounded JSON parsing, and graceful shutdown. Packaged it as a non-root Docker image. GitHub Actions runs tests for pull requests to master; on master pushes or manual dispatches it assumes an AWS role through GitHub OIDC, publishes a unique run-specific image tag to ECR, registers an ECS task definition with that image, and waits for service stability. Terraform modules describe networking, ECR, the load balancer, ECS, and S3 resources.",
 
     outcome:
-      "Demonstrates practical AWS infrastructure, Infrastructure as Code, configuration management, and deployment automation.",
+      "Provides a practical walkthrough of Express service structure, operational endpoints, Docker health checks, immutable image delivery, Terraform modules, and CI/CD with GitHub OIDC. The sample has no database; infrastructure provisioning remains a separately reviewed step, and the portfolio description does not imply that AWS deployment has already been run.",
 
-    technologies: ["AWS", "EC2", "RDS", "S3", "Terraform", "Ansible", "Docker"],
+    technologies: ["Node.js", "Express.js", "Docker", "AWS ECS Fargate", "Amazon ECR", "Application Load Balancer", "VPC", "Terraform", "GitHub Actions"],
 
     github: "https://github.com/AkshayV30/NodeJS_App_Delpoy_on_AWS",
   },
