@@ -1,12 +1,12 @@
-import type { Experience } from "@/types/experience";
+import { Experience } from "@/types/experience";
 
 export const EXPERIENCE: Experience[] = [
   {
-    role: "DevOps / Cloud Engineer",
-    company: "Independent Engineering & Software Projects",
+    role: "DevOps & Infrastructure Consultant",
+    company: "Freelance / Independent Engineering Services",
     startMonth: "2026-01",
     description:
-      "Building cloud-native applications and deployment workflows with a focus on containerization, CI/CD automation, infrastructure as code, and cloud platforms.",
+      "Architecting production-grade cloud-native environments and automated delivery pipelines. Provisioning deterministic multi-tier architectures using Infrastructure as Code (IaC), configuring automated CI/CD workflows, and containerising legacy application models for high availability and scalable runtime orchestration.",
     technologies: [
       "Docker",
       "Kubernetes",
@@ -23,16 +23,16 @@ export const EXPERIENCE: Experience[] = [
     startMonth: "2024-01",
     endMonth: "2024-03",
     description:
-      "Supported development and deployment workflows while gaining practical experience with DevOps practices, cloud environments, Linux, and CI/CD.",
+      "Accelerated internal system deployments by managing Linux environments, building scalable CI/CD automation flows, and supporting cloud infrastructure monitoring. Collaboration on software delivery life cycles to transition builds reliably from staging environments into active test targets.",
     technologies: ["DevOps", "Cloud", "Linux", "CI/CD"],
   },
 
   {
-    role: "Independent Software Engineer",
-    company: "Independent Projects",
+    role: "Independent Software & Systems Engineer",
+    company: "Contract & Self-Directed Engineering",
     startMonth: "2019-01",
     description:
-      "Built full-stack, AI, cloud, and DevOps projects while developing practical experience across application development, APIs, automation, and cloud-native technologies.",
+      "Developed full-stack web platforms, edge-facing APIs, and distributed systems. Built full-lifecycle software applications, integrating AI inference endpoints, designing event-driven backend services, and utilizing cloud infrastructure environments to bridge complex systems logic with scalable deployment runtimes.",
     technologies: [
       "TypeScript",
       "React",
@@ -46,12 +46,12 @@ export const EXPERIENCE: Experience[] = [
   },
 
   {
-    role: "CAE Engineer Intern",
+    role: "CAE Engineering Intern",
     company: "Tata-Marco Polo Motors Ltd.",
     startMonth: "2018-03",
     endMonth: "2018-05",
     description:
-      "Performed CAE simulations on jack-knife bus doors to evaluate structural stability and fatigue life, investigated failures in functional regions, and worked with the design team on structural improvements.",
+      "Executed Finite Element Analysis (FEA) and structural simulations for heavy commercial vehicle mechanisms to identify stress limits and structural degradation. Partnered closely with the manufacturing design floor to evaluate stress points and translate structural analytics into production-ready physical enhancements.",
     technologies: [
       "ANSYS",
       "CAE",
@@ -63,12 +63,12 @@ export const EXPERIENCE: Experience[] = [
   },
 
   {
-    role: "CAE Engineer Intern",
+    role: "CAE Engineering Intern",
     company: "Bharat Electronics Ltd.",
     startMonth: "2017-08",
     endMonth: "2017-09",
     description:
-      "Analyzed an aircraft adapter housing using ANSYS, evaluating stress distribution, deformation, and structural strength under applied loading conditions to support design optimization.",
+      "Conducted structural strength, load distribution, and mechanical deformation simulations on aerospace adapter component housings using ANSYS. Analysed high-stress failure domains to provide quantitative stress boundary reports for physical system design optimisations.",
     technologies: [
       "ANSYS",
       "CAE",
@@ -80,12 +80,12 @@ export const EXPERIENCE: Experience[] = [
   },
 
   {
-    role: "CAD Engineer Intern",
+    role: "CAD & Manufacturing Intern",
     company: "Hindustan Aeronautics Ltd.",
     startMonth: "2015-04",
     endMonth: "2015-05",
     description:
-      "Developed CAD models and simulated die forging of accumulator bodies used in hydraulic systems, analyzing material flow to support forging-process optimization.",
+      "Modelled aerospace hydraulic system components and simulated hot die manufacturing forging workflows. Evaluated material flow dynamics to streamline manufacturing pipeline steps, reducing physical component defects and improving factory process predictability.",
     technologies: [
       "CAD",
       "Forging Simulation",
