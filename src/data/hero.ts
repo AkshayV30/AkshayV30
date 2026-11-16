@@ -14,8 +14,8 @@ export const SOCIAL_LINKS = [
 ] as const;
 
 export const HERO_ROLES = [
-  "DevOps & Cloud Engineer",
-  "Backend Engineer",
-  "Cloud-Native Engineer",
-  "DevOps Automation Engineer",
+  "DevOps & Cloud Infrastructure Engineer",
+  "Backend & API Systems Engineer",
+  "Cloud-Native & Kubernetes Engineer",
+  "AI Platform & Automation Engineer",
 ] as const;

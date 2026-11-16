@@ -27,7 +27,7 @@ export default function Hero() {
         >
           {/* Eyebrow */}
           <p className="text-sm font-medium uppercase tracking-[0.16em] text-primary">
-            Software Engineering · Cloud · DevOps
+            Cloud Infrastructure · DevOps · Backend & AI Systems
           </p>
 
           {/* Name */}
@@ -36,15 +36,16 @@ export default function Hero() {
           </h1>
 
           {/* Animated Role */}
-          {/* <div className="mt-5 min-h-[2.25rem] sm:min-h-[2.75rem]">
+          <div className="mt-5 min-h-[2.25rem] sm:min-h-[2.75rem]">
             <Typewriter roles={HERO_ROLES} />
-          </div> */}
+          </div>
 
           {/* Description */}
-          <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg md:text-xl">
-            Building production-oriented software systems across backend
-            engineering, cloud infrastructure, CI/CD automation, and
-            cloud-native technologies.
+          <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg md:text-xl">
+            Designing automated cloud infrastructure, CI/CD delivery pipelines,
+            and resilient backend services with Terraform, Kubernetes, AWS, and
+            applied AI integrations—turning complex architectures into
+            repeatable, production-ready deployments.
           </p>
 
           {/* Actions */}
