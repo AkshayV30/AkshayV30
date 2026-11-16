@@ -36,9 +36,9 @@ export default function Hero() {
           </h1>
 
           {/* Animated Role */}
-          <div className="mt-5 min-h-[2.25rem] sm:min-h-[2.75rem]">
+          {/* <div className="mt-5 min-h-[2.25rem] sm:min-h-[2.75rem]">
             <Typewriter roles={HERO_ROLES} />
-          </div>
+          </div> */}
 
           {/* Description */}
           <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg md:text-xl">
