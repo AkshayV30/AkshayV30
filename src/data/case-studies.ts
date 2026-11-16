@@ -140,29 +140,4 @@ export const CASE_STUDIES: CaseStudy[] = [
 
     github: "https://github.com/AkshayV30/NodeJS_App_Delpoy_on_AWS",
   },
-
-  {
-    id: "frontend-mentor",
-    title: "Frontend Mentor Challenge Portfolio",
-    category: "Frontend Engineering",
-
-    problem:
-      "Building strong frontend interfaces requires repeated practice with responsive layouts, accessibility, interaction, and translating designs into working interfaces.",
-
-    approach: [
-      "Completed a broad collection of frontend challenges covering responsive components, interactive applications, API integration, and design-to-code implementation.",
-    ],
-    outcome:
-      "Demonstrates hands-on frontend fundamentals across HTML, CSS, JavaScript, responsive design, accessibility, and API-driven interfaces.",
-
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive Design",
-      "REST APIs",
-    ],
-
-    github: "https://github.com/AkshayV30/Front-End-Mentor-Challenges",
-  },
 ];
