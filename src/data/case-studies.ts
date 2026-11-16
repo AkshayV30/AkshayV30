@@ -33,23 +33,26 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: "Full-Stack Engineering",
 
     problem:
-      "Manual employee and department tracking makes staff administration difficult to organize and extend.",
+      "Manual employee, department, and patient tracking makes clinic administration error-prone, insecure, and difficult to scale.",
 
     approach: [
-      "Developed a full-stack management platform with authentication, role-based access, employee records, departments, staff assignments, and patient records.",
+      "Engineered a full-stack clinic management platform with an Angular frontend and a RESTful Node.js, Express, and TypeScript backend.",
+      "Designed a normalized PostgreSQL relational schema with Prisma ORM to enforce referential integrity across many-to-many employee-department assignments and patient records.",
+      "Implemented JWT authentication with role-based access control (Admin/Staff) and containerized the stack with Docker and Terraform.",
     ],
     outcome:
-      "Established a typed, database-backed foundation for a future clinic management and E-CRM platform.",
+      "Delivered a type-safe, relational database-backed platform with zero data redundancy, ready for production clinic and E-CRM workflows.",
 
     technologies: [
       "Angular",
       "Node.js",
-      "Express",
+      "Express.js",
       "TypeScript",
       "PostgreSQL",
       "Prisma",
       "JWT",
       "Docker",
+      // "Terraform",
     ],
 
     github: "https://github.com/AkshayV30/Apollonia_Dental_Employee_Management",
