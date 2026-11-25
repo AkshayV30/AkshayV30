@@ -3,10 +3,12 @@ export type ProjectCategory =
   | "DevOps & Platform"
   | "AI Engineering"
   | "AI & Manufacturing"
+  | "AI & Simulation"
   | "Full-Stack & DevOps"
   | "Full-Stack Development"
   | "Embedded Systems"
   | "Frontend Engineering";
+
 
 export type ProjectIcon =
   | "ai"

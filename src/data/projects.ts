@@ -132,6 +132,33 @@ export const PROJECTS: Project[] = [
     liveLink: "",
   },
   {
+    title: "neurodrive-sim — Autonomous Vehicle & Neuroevolution Engine",
+    category: "AI & Simulation",
+    featured: true,
+    icon: "ai", // or add a "simulation" / "car" icon mapping in projects-card.tsx
+    highlights: [
+      "Engineered a deterministic 2D vehicle kinematics, rotated bounding-box collision, and ray-casting sensor engine from scratch in Modern C++20 and raylib.",
+      "Implemented parallel genetic neuroevolution (100+ concurrent agents) with feedforward multi-layer perceptrons (MLPs), live mutation rate tuning, and brain disk persistence.",
+      "Built a real-time cyber-telemetry HUD and live neural network topology visualizer rendering synaptic weights, bias rings, and directional outputs.",
+      "Packaged with CMake and a multi-stage Fedora Dockerfile supporting both headless Xvfb CI verification and Linux X11 GUI forwarding.",
+    ],
+    description:
+      "Deterministic 2D autonomous vehicle kinematics, ray-casting perception, and parallel neuroevolution simulation engine built from scratch in C++20 and raylib with multi-stage Docker support.",
+    technologies: [
+      "C++20",
+      "CMake",
+      "raylib",
+      "Neuroevolution",
+      "MLP Neural Networks",
+      "Docker",
+      "Xvfb",
+      "Linux X11",
+    ],
+    github: "https://github.com/AkshayV30/neurodrive-sim",
+    liveLink: "",
+  },
+
+  {
     title: "ATmega8 WS2812 LED Animations Firmware",
     category: "Embedded Systems",
     icon: "embedded",

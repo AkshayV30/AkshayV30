@@ -19,7 +19,7 @@ const PROFILE_GROUPS: Record<
   ProjectCategory[]
 > = {
   "Cloud & DevOps": ["Cloud & DevOps", "DevOps & Platform"],
-  "AI & MLOps": ["AI Engineering", "AI & Manufacturing"],
+  "AI & MLOps": ["AI Engineering", "AI & Manufacturing", "AI & Simulation"],
   "Web Development": [
     "Full-Stack & DevOps",
     "Full-Stack Development",
