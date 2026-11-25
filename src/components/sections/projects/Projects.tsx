@@ -12,15 +12,7 @@ import {
 } from "@/app/motions";
 
 import { ProjectCard } from "./projects-card";
-import type { ProjectCategory } from "@/types/project";
-
-type FilterTab =
-  | "Featured"
-  | "Cloud & DevOps"
-  | "AI & MLOps"
-  | "Web Development"
-  | "Embedded Systems"
-  | "All Projects";
+import type { FilterTab, ProjectCategory } from "@/types/project";
 
 const PROFILE_GROUPS: Record<
   Exclude<FilterTab, "Featured" | "All Projects">,

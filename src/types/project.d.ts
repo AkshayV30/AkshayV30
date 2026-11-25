@@ -29,3 +29,11 @@ export interface Project {
   github?: string;
   liveLink?: string;
 }
+
+export type FilterTab =
+  | "Featured"
+  | "Cloud & DevOps"
+  | "AI & MLOps"
+  | "Web Development"
+  | "Embedded Systems"
+  | "All Projects";
