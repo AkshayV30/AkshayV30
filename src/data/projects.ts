@@ -102,6 +102,7 @@ export const PROJECTS: Project[] = [
       "Terraform",
       "GitHub Actions",
     ],
+
     github: "https://github.com/AkshayV30/NodeJS_App_Delpoy_on_AWS",
     liveLink: "",
   },
@@ -140,6 +141,7 @@ export const PROJECTS: Project[] = [
       "Animates 10 pixels and clears the remaining 53 pixels.",
       "Includes PlatformIO configuration, Cppcheck, and a custom HID upload workflow.",
     ],
+
     description:
       "Modular embedded C++ firmware for the Robosapiens RSI-05 ATmega8A board, generating a smooth, full-spectrum breathing animation across 10 WS2812 LEDs while explicitly clearing the remaining pixels in a 63-LED chain. Designed for constrained microcontroller resources using flash-resident sine lookup tables, integer-based animation, configurable output limits, and a PlatformIO build and HID upload workflow.",
     technologies: [
@@ -166,6 +168,7 @@ export const PROJECTS: Project[] = [
       "Implements JavaScript interactions and accessibility considerations.",
       "Includes a deployed GitHub Pages collection.",
     ],
+
     description:
       "Collection of responsive frontend implementations based on real-world design challenges, focused on semantic HTML, CSS layout, JavaScript interactions, accessibility, and responsive UI.",
     technologies: [
@@ -189,6 +192,7 @@ export const PROJECTS: Project[] = [
       "Includes authentication and role-based access control.",
       "Automates frontend deployment with GitHub Actions.",
     ],
+
     description:
       "Full-stack CRUD application with authentication, role-based access control, RESTful APIs, PostgreSQL persistence, and automated frontend deployment.",
     technologies: [

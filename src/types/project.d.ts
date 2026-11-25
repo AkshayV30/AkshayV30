@@ -1,15 +1,12 @@
-export interface Project {
-  title: string;
-  description: string;
-  technologies: string[];
-  liveLink?: string;
-  github?: string;
-
-  // Presentation metadata
-  category?: string;
-  icon?: ProjectIcon;
-  highlights?: string[];
-}
+export type ProjectCategory =
+  | "Cloud & DevOps"
+  | "DevOps & Platform"
+  | "AI Engineering"
+  | "AI & Manufacturing"
+  | "Full-Stack & DevOps"
+  | "Full-Stack Development"
+  | "Embedded Systems"
+  | "Frontend Engineering";
 
 export type ProjectIcon =
   | "ai"
@@ -20,3 +17,15 @@ export type ProjectIcon =
   | "embedded"
   | "frontend"
   | "tasks";
+
+export interface Project {
+  title: string;
+  category: ProjectCategory;
+  featured?: boolean;
+  icon?: ProjectIcon;
+  description: string;
+  highlights?: string[];
+  technologies: string[];
+  github?: string;
+  liveLink?: string;
+}
