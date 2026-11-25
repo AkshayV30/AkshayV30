@@ -18,38 +18,53 @@ type FilterTab =
   | "Featured"
   | "Cloud & DevOps"
   | "AI & MLOps"
-  | "Full-Stack"
-  | "Embedded & UI";
+  | "Web Development"
+  | "Embedded Systems"
+  | "All Projects";
 
 const PROFILE_GROUPS: Record<
-  Exclude<FilterTab, "Featured">,
+  Exclude<FilterTab, "Featured" | "All Projects">,
   ProjectCategory[]
 > = {
   "Cloud & DevOps": ["Cloud & DevOps", "DevOps & Platform"],
   "AI & MLOps": ["AI Engineering", "AI & Manufacturing"],
-  "Full-Stack": ["Full-Stack & DevOps", "Full-Stack Development"],
-  "Embedded & UI": ["Embedded Systems", "Frontend Engineering"],
+  "Web Development": [
+    "Full-Stack & DevOps",
+    "Full-Stack Development",
+    "Frontend Engineering",
+  ],
+  "Embedded Systems": ["Embedded Systems"],
 };
 
 const FILTER_TABS: FilterTab[] = [
   "Featured",
   "Cloud & DevOps",
   "AI & MLOps",
-  "Full-Stack",
-  "Embedded & UI",
+  "Web Development",
+  "Embedded Systems",
+  "All Projects",
 ];
 
 function getProjectsByTab(tab: FilterTab) {
-  return tab === "Featured"
-    ? PROJECTS.filter((project) => project.featured)
-    : PROJECTS.filter((project) =>
-        PROFILE_GROUPS[tab].includes(project.category),
-      );
+  if (tab === "All Projects") return PROJECTS;
+  if (tab === "Featured") {
+    return PROJECTS.filter((project) => project.featured);
+  }
+  return PROJECTS.filter((project) =>
+    PROFILE_GROUPS[tab].includes(project.category),
+  );
 }
 
 export default function Projects() {
   const shouldReduceMotion = useReducedMotion();
-  const [activeTab, setActiveTab] = useState<FilterTab>("Featured");
+
+  // Guarantees a non-empty tab is always active on initial load
+  const [activeTab, setActiveTab] = useState<FilterTab>(() => {
+    const firstAvailableTab = FILTER_TABS.find(
+      (tab) => getProjectsByTab(tab).length > 0,
+    );
+    return firstAvailableTab ?? "All Projects";
+  });
 
   const filteredProjects = getProjectsByTab(activeTab);
 
@@ -76,11 +91,6 @@ export default function Projects() {
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
             Projects
           </h2>
-
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-muted-foreground">
-            Filter projects by engineering profile across cloud infrastructure,
-            DevOps automation, applied AI systems, and full-stack development.
-          </p>
         </motion.div>
 
         {/* Role-Based Filter Tabs */}
