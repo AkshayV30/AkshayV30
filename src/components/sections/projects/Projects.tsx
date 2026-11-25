@@ -105,19 +105,19 @@ export default function Projects() {
                 aria-selected={isActive}
                 onClick={() => setActiveTab(tab)}
                 className={[
-                  "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-semibold tracking-wide transition-all duration-200",
+                  "group inline-flex select-none items-center gap-2 rounded-full border px-4 py-2 text-xs font-semibold tracking-wide transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50",
                   isActive
-                    ? "border-primary bg-primary text-primary-foreground shadow-sm"
-                    : "border-border/70 bg-card/60 text-muted-foreground hover:border-primary/40 hover:text-foreground",
+                    ? "cursor-default border-primary bg-primary text-primary-foreground shadow-sm"
+                    : "cursor-pointer border-border/70 bg-card/60 text-muted-foreground hover:-translate-y-0.5 hover:border-primary/50 hover:bg-card hover:text-foreground hover:shadow-sm active:translate-y-0",
                 ].join(" ")}
               >
                 <span>{tab}</span>
                 <span
                   className={[
-                    "rounded-full px-1.5 py-0.5 text-[10px] font-bold",
+                    "rounded-full px-1.5 py-0.5 text-[10px] font-bold transition-colors duration-200",
                     isActive
                       ? "bg-primary-foreground/20 text-primary-foreground"
-                      : "bg-muted text-muted-foreground",
+                      : "bg-muted text-muted-foreground group-hover:bg-primary/15 group-hover:text-primary",
                   ].join(" ")}
                 >
                   {count}
