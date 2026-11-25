@@ -2,6 +2,36 @@ import type { CaseStudy } from "@/types/caseStudies";
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: "neurodrive-sim",
+    title: "neurodrive-sim — Autonomous Vehicle & Neuroevolution Engine",
+    category: "Systems / AI Simulation",
+
+    problem:
+      "Training and validating autonomous driving behaviors requires deterministic physics, real-time perception ray-casting, and transparent neural network introspection without the overhead or black-box opacity of heavy external ML and game engines.",
+
+    approach: [
+      "Engineered a zero-dependency 2D vehicle kinematics, rotated bounding-box collision, and multi-ray distance sensor engine from scratch in Modern C++20 and raylib.",
+      "Built a parallel genetic neuroevolution runtime simulating 100+ autonomous agents concurrently with feedforward multi-layer perceptrons (MLPs), real-time mutation tuning, and brain disk persistence.",
+      "Developed a live cyber-telemetry HUD and neural network topology visualizer rendering animated synaptic weights, bias rings, and directional control outputs in real time.",
+      "Containerized the build and runtime pipeline using CMake and a multi-stage Fedora Dockerfile supporting both headless Xvfb automated CI verification and Linux X11 GUI forwarding.",
+    ],
+    outcome:
+      "Delivered a deterministic, modular C++20 autonomous simulation runtime capable of real-time neuroevolution training, visual policy debugging, and reproducible headless container execution.",
+
+    technologies: [
+      "C++20",
+      "CMake",
+      "raylib",
+      "Neuroevolution",
+      "MLP Neural Networks",
+      "Docker",
+      "Xvfb",
+      "Linux X11",
+    ],
+
+    github: "https://github.com/AkshayV30/neurodrive-sim",
+  },
+  {
     id: "ai-talent-scouting",
     title: "AI Talent Scouting & Engagement Agent",
     category: "AI / Backend Engineering",
